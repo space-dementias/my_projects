@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Teacher Signup 2</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/custombox.min.css">
+    <link rel="stylesheet" href="css/sol.css">
+    <link rel="stylesheet" href="css/elements.css">
+    <link rel="stylesheet" href="css/dialogs.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/custombox.min.js"></script>
+    <script src="js/custombox.legacy.min.js"></script>
+    <script src="js/sol.js"></script>
+
+<body class="page">
+
+<div class="modal visible">
+    <form class="modal_container">
+        <header>
+            <h2>Complete your personal information</h2>
+            <p>It wont take a minute <img src="assets/img/face.svg"></p>
+            <span class="btn" id="close"><img src="assets/img/cross.png" alt="close modal"></span>
+        </header>
+        <section>
+            <div class="options">
+                <ol>
+                    <li class="checked">Setup Profile</li>
+                    <li>Specify Subjects</li>
+                    <li>Diploma & Certificates</li>
+                    <li>Introduction Video</li>
+                    <li class="passed">Other Options</li>
+                </ol>
+            </div>
+
+            <div class="main_info">
+                <h3>Mastered Subjects</h3>
+                <div class="main_info__row">
+                    <label for="what_teach">What are the subjects you are teaching?
+                        <span class="small">Maximum of 5 subjects</span>
+                    </label>
+                    <select name="what_teach" id="what_teach" class="chip" multiple="multiple">
+                        <option value="Math">Math</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="History">History</option>
+                        <option value="Physics">Physics</option>
+                    </select>
+                </div>
+                <div class="main_info__row">
+                    <label for="desrcr">Briefly describe yourself and what makes you stand out in those subjects</label>
+                    <textarea name="desrcr" id="desrcr" placeholder="Tell us why students should hire you"></textarea>
+                </div>
+
+                <div class="buttons">
+                    <div class="btn-back card__index">Back</div>
+                    <div class="btn-submit next__step">Continue <i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+
+        </section>
+    </form>
+
+</div>
+
+</body>
+
+<script>
+
+    // chips
+    $(function () {
+        // initialize sol
+        $('.chip').searchableOptionList();
+    });
+
+
+</script>
+
+</html>

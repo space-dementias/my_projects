@@ -1,0 +1,335 @@
+.modal_container {
+    /* transform: scale(0.7) !important; */
+    border: 1px solid silver;
+}
+
+.modal header h2 {
+    margin: 0;
+    margin-bottom: 11px;
+    font-weight: 300;
+    font-size: 1.2em;
+    letter-spacing: -.015em;
+    line-height: 50px;
+}
+
+#setup .modal_container{
+     min-height: 1800px;
+}
+
+.modal header p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #6b6363;
+    margin: 0;
+    font-size: 0.75em;
+}
+
+.modal header p img {
+    width: 27px;
+    height: 27px;
+    margin-left: 10px;
+    opacity: .5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#success h5{
+    font-weight: 300;
+    color: #0d0d0d;
+    font-size: 2.875rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#success .buttons .btn-submit{
+    margin-right: 50px;
+    float: none;
+}
+
+#student  .modal_container{
+    min-height: 1300px;
+}
+
+#book_teacher  .modal_container{
+    min-height: 1500px;
+}
+
+.main_info__row > label.sessions{
+    float: left;
+    width: calc(100% / 5 - 2px);
+    position: relative;
+    height: 4.375em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: #6b6363;
+    border:1px solid #dfdfdf;
+}
+
+.main_info__row > label.sessions:nth-child(2),
+.main_info__row > label.sessions.avail-time:nth-child(2) span,
+.main_info__row > label.sessions.level:nth-child(2) span{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.main_info__row > label.sessions:last-child,
+.main_info__row > label.sessions.avail-time:last-child span,
+.main_info__row > label.sessions.level:last-child span{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.main_info__row > label.sessions input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.main_info__row > label.sessions span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.main_info__row > label.sessions:hover span{
+    color: #e2555b;
+}
+
+.main_info__row > label.sessions input:checked + span{
+    background: #e2555b;
+    color: #fff;
+}
+
+#book_teacher .btn-submit{
+    opacity: .6;
+}
+
+.main_info__row > label.sessions.avail-time{
+    width:  calc(100% / 3);
+    border:0;
+}
+
+.main_info__row > label.sessions.avail-time i{
+    color: #e5e5e5;
+    margin-right: 9px;
+}
+
+.main_info__row > label.sessions.avail-time span{
+    border:1px solid #dfdfdf;
+}
+
+.main_info__row > label.sessions.avail-time input:checked + span{
+    background: #fff;
+    color: #e2555b;
+    border-color: #e2555b;
+}
+.main_info__row > label.sessions.avail-time input:checked + span i{
+    color: #e2555b;
+}
+
+/* datepicker */
+.datepicker{
+    z-index: 99999;
+    width: 500px;
+}
+.visible .datepicker{
+    width: 720px;
+}
+
+.-bottom-left- .datepicker--pointer, .-top-left- .datepicker--pointer{
+    left: auto;
+    right: 20px;
+}
+.datepicker--nav{
+    font-size: 1.5rem;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.datepicker--day-name{
+    color: #0d0d0d;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    font-size: .625rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.datepicker--cell{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    height: 55px;
+    position: relative;
+}
+.datepicker--cell.-current-{
+    color: #fff;
+}
+.datepicker--cell.-current-:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 55px;
+    height: 55px;
+    background: #e2555b;
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: -1;
+}
+.datepicker--cell.-focus-{
+    background: transparent;
+    color: #e2555b;
+}
+
+.datepicker--cell.-selected-{
+    background: #e2555b;
+}
+
+/* schedule */
+.schedule{
+    width: 100%;
+    border:1px solid #dfdfdf;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.schedule tr:last-child th,
+.schedule tr:last-child td{
+    border-bottom: 0;
+}
+.schedule th{
+    text-align: left;
+    font-family: 'Poppins', sans-serifp;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #0d0d0d;
+    padding: 1.5em;
+    border-bottom: 1px solid #dfdfdf;
+}
+.schedule td{
+    padding: 1.5em 1.5em 2.5em;
+    color: #6b6363;
+    font-family: 'Poppins', sans-serifp;
+    font-weight: 300;
+    font-size: 1.125rem;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.schedule a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    margin: 0 6px;
+    width: 25px;
+    height: 25px;
+    border:2px solid #e2555b;
+    border-radius: 50%;
+    color: #e2555b;
+    font-size: .875rem;
+    transition:.5s all ease-out;
+    text-decoration: none;
+}
+.schedule a:hover{
+    background: #e2555b;
+    color: #fff;
+}
+
+.btn-submit.new_schedule{
+    height: 65px;
+    line-height: 61px;
+    max-width: 310px;
+    letter-spacing: .25em;
+    font-size: .875rem;
+    padding: 0 30px;
+    opacity: 1;
+    background: #fff;
+    color: #e2555b;
+}
+.btn-submit.new_schedule:hover{
+    color: #fff;
+    background: #e2555b;
+}
+.btn-submit.new_schedule i{
+    position: static;
+    margin-right: 22px;
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    border-color: #e2555b;
+}
+
+/* step 2 */
+.main_info__row > label.sessions.level{
+    height: 7.875em;
+    border:0;
+    margin-bottom: 55px;
+}
+.main_info__row > label.sessions.level span{
+    flex-direction: column;
+    border:1px solid #e3e3e3;
+}
+.main_info__row > label.sessions.level input:checked + span{
+    background: #fff;
+    color: #e2555b;
+    border-color: #e2555b;
+}
+
+/* range */
+.irs{
+    margin-top: 40px;
+}
+.irs-line{
+    height: 10px;
+    width: 100%;
+    border:1px solid #dfdfdf;
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+.irs-single{
+    visibility: visible !important;
+    width: 140px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 6px;
+    background: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: .15em;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #fff;
+    top: -50px;
+}
+.irs-single:after{
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: " ";
+    width: 13px;
+    height: 9px;
+    background: url("../assets/img/triange.png") 0 0 no-repeat;
+    position: absolute;
+}
+.irs-from,
+.irs-to{
+    display: block;
+    width: 24px;
+    height: 30px;
+    background: url("../assets/img/range.png") 0 0 no-repeat;
+    cursor: pointer;
+    font-size: 0;
+    margin-top: -9px;
+    z-index: 9;
+}
+.irs-bar{
+    height: 10px;
+    top: 1px;
+    background: #e2555b;
+}

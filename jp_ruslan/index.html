@@ -1,0 +1,1027 @@
+<html>
+
+<head>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/languagepicker.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.multiselect.css">
+    <link rel="stylesheet" href="css/style-1.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/els.css">
+    <!--<link rel="stylesheet" href="css/style-1.css">-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.multiselect.js"></script>
+    <script src="js/wow.js"></script>
+
+<body class="page">
+    <header class="header jp-header sidebar-pull fixed-header">
+        <div class="header__container">
+            <a href="#" class="jp-menu__logo js-slideout-toggle desktop">
+                <img src="assets/img/logo_48.png" alt="jeprogresse.fr logo">
+            </a>
+            <div class="jp-menu__logo js-slideout-toggle mobile">
+                <img src="assets/img/logo_48.png" alt="jeprogresse.fr logo">
+            </div>
+
+
+            <div class="sl-nav desktop-only">
+
+                <ul>
+                    <li><b>Language &#9661;</b></i>
+                        <div class="triangle"></div>
+                        <ul>
+                            <li><i class="sl-flag flag-fr"></i> <span class="active"><a href="#">France</a></span></li>
+                            <li><i class="sl-flag flag-usa"></i> <span><a href="#">English</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="header__information header-info desktop-only">
+                <ul class="header-info__list">
+                    <li class="header-info__item">
+                        <a href="javascript:void(0)" class="header-info__link header-info__link--messages">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="header-info__item">
+                        <a href="javascript:void(0)" class="header-info__link header-info__link--notifications m-active">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__profile header-profile">
+                <a class="header-profile__link js-profile-dropdown">
+                    <div class="header-profile__avatar">
+                        <img src="assets/img/_avatar.jpg" alt="">
+                    </div>
+                    <span class="header-profile__name">
+                        Laura
+                    </span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="header-profile__menu js-profile-menu">
+                    <li class="header-profile__item">
+                        <a href="#">My profile</a>
+                    </li>
+                    <li class="header-profile__item">
+                        <a href="#">My credits</a>
+                    </li>
+                    <!-- <li class="header-profile__item">
+                        <a href="#">Consult a private room</a>
+                    </li> -->
+                    <li class="header-profile__item">
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            </form>
+        </div>
+    </header>
+
+    <div class="page__wrapper page__row">
+
+        <aside id="menu" class="menu block page__aside aside shadowedBox jp-menu">
+
+
+
+            <div class="header__info mobile-only">
+                <div class="header__language-menu language-menu">
+                    <form class="jp-lang">
+                        <ul class="language-menu__list">
+                            <li class="language-menu__item">
+                                <label for="lang-en" class="language-menu__label language-menu__label--en">
+                                    <input type="radio" id="lang-en" class="language-menu__toggler" name="language-select">
+                                </label>
+                            </li>
+                            <li class="language-menu__item">
+                                <label for="lang-fr" class="language-menu__label language-menu__label--fr">
+                                    <input type="radio" id="lang-fr" class="language-menu__toggler" name="language-select">
+                                </label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="header__information header-info">
+                    <ul class="header-info__list">
+                        <li class="header-info__item">
+                            <a href="javascript:void(0)" class="header-info__link header-info__link--messages">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="header-info__item">
+                            <a href="javascript:void(0)" class="header-info__link header-info__link--notifications m-active">
+                                <i class="fas fa-bell"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="header__profile header-profile mobile-only">
+                <a class="header-profile__link js-profile-dropdown">
+                    <div class="header-profile__avatar">
+                        <img src="assets/img/_avatar.jpg" alt="">
+                    </div>
+                    <span class="header-profile__name">
+                        Laura
+                    </span>
+                    <i class="fas fa-angle-right"></i>
+                </a>
+                <ul class="header-profile__menu js-profile-menu">
+                    <li class="header-profile__item">
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li class="header-profile__item">
+                        <a href="#">Link 2</a>
+                    </li>
+                    <li class="header-profile__item">
+                        <a href="#">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="aside__main-menu main-menu mobile-only">
+                <ul class="main-menu__list jp-menu__list">
+                    <li class="first parent active">
+                        <i class="fas fa-graduation-cap"></i>
+                        <a href="#">My JP Classroom</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <i class="fas fa-users"></i>
+                        <a href="" class="main-menu__link active">My teachers</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <i class="fas fa-tasks"></i>
+                        <a href="" class="main-menu__link">My requests</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <i class="fas fa-home"></i>
+                        <a href="" class="main-menu__link">My homeworks</a>
+                    </li>
+                    <li class="accordion" class="main-menu__item last parent more">
+                        <i class="fas fa-caret-circle-down"></i>
+                        <a href="#" class="main-menu__link main-menu__link--more ">More</a>
+                    </li>
+                    <div class="main-menu__accordion">
+                        <li class="main-menu__item">
+                            <i class="fas fa-user-circle"></i>
+                            <a href="" class="main-menu__link">My profile</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-money-bill-alt"></i>
+                            <a href="" class="main-menu__link">My payments</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-usd-circle"></i>
+                            <a href="" class="main-menu__link">My learning credits</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-usd-square"></i>
+                            <a href="" class="main-menu__link">My sponsorship</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-book"></i>
+                            <a href="" class="main-menu__link">My materials</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-comments"></i>
+                            <a href="" class="main-menu__link">My chatroom</a>
+                        </li>
+                    </div>
+
+                    </li>
+                    <li class="accordion" class="main-menu__item last parent more">
+                        <i class="fas fa-envelope"></i>
+                        <a href="#" class="main-menu__link main-menu__link--more ">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="aside__main-menu main-menu desktop-only">
+
+                <ul class="main-menu__list jp-menu__list">
+                    <li class="first parent active">
+                        <i class="fas fa-graduation-cap"></i>
+                        <a href="#">My JP Classroom</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <i class="fas fa-users"></i>
+                        <a href="" class="main-menu__link active">My teachers</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <i class="fas fa-tasks"></i>
+                        <a href="" class="main-menu__link">My requests</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <i class="fas fa-home"></i>
+                        <a href="" class="main-menu__link">My homeworks</a>
+                    </li>
+                    <li class="accordion" class="main-menu__item last parent more">
+                        <i class="fas fa-caret-circle-down"></i>
+                        <a href="#" class="main-menu__link main-menu__link--more ">More</a>
+                    </li>
+                    <div class="main-menu__accordion">
+                        <li class="main-menu__item">
+                            <i class="fas fa-user-circle"></i>
+                            <a href="" class="main-menu__link">My profile</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-money-bill-alt"></i>
+                            <a href="" class="main-menu__link">My payments</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-usd-circle"></i>
+                            <a href="" class="main-menu__link">My learning credits</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-usd-square"></i>
+                            <a href="" class="main-menu__link">My sponsorship</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-book"></i>
+                            <a href="" class="main-menu__link">My materials</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <i class="fas fa-comments"></i>
+                            <a href="" class="main-menu__link">My chatroom</a>
+                        </li>
+                    </div>
+
+                    </li>
+                    <li class="accordion" class="main-menu__item last parent more">
+                        <i class="fas fa-envelope"></i>
+                        <a href="#" class="main-menu__link main-menu__link--more ">Contact us</a>
+                    </li>
+                </ul>
+
+                <!--                         
+                <ul class="main-menu__list jp-menu__list">
+                    <li class="main-menu__item main-menu__item--title">
+                        <span>Menu</span>
+                    </li>
+                    <li class="first parent active">
+                        <a href="#">My JP Classroom</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="" class="main-menu__link m-active">Book a Teacher</a>
+                    </li>
+                    <li class="main-menu__item parent">
+                        <a href="" class="main-menu__link main-menu__link--dropdown">My profile</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="" class="main-menu__link">Contact us</a>
+                    </li>
+                    <li class="main-menu__item last parent more">
+                        <a href="" class="main-menu__link main-menu__link--more ">More</a>
+                    </li>
+                </ul> -->
+            </nav>
+
+            <div class="aside__alerts aside-alerts">
+                <ul class="aside-alerts__list">
+                    <li class="aside-alerts__item">
+                        <span class="aside-alerts__title jp-menu__ttl">
+                            My requests
+                        </span>
+                        <span class="aside-alerts__text">
+                            No request available
+                        </span>
+                    </li>
+                    <li class="aside-alerts__item">
+                        <span class="aside-alerts__title jp-menu__ttl">
+                            My teachers
+                        </span>
+
+
+                        <div class="my-teachers__block">
+                            <div class="my-teachers__item">
+                                <div class="user">
+                                    <div class="photo"><img src="assets/img/avatar1.jpg"></div>
+                                    <div class="data">
+                                        <div class="name">Vanessa</div>
+                                        <div class="position">Math Subject</div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <div class="clock"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARdSURBVGhD7ZlJaxRBFMfHDVwQPbhcPYm7fgNPeoqZ7jhJVWIwKhLjWTFgDAFR8BQ3XL6AWzQEzcXlInG/uN2CEBfQRM3MQLy4j/9X87qmOjNxuqt7ouL8oJimXtVbuupVVdckqlSpUuX/JdfVNTXjNqxNO2I3yvGMK3syjrylCp7TrjyWdmQbtcklElO4299DZrNcAydPZlwxAodzwYoYUYElm1azmj9HerNcCWf6UX6WdrZ8ob4YvaujjljOaiePXGvrDDhwCA58LeHYN/zew+/ptCv2ok2rKvSMOozEfW7j7+fIL6Qzt379dDZTWUY2ycWY8w+KHHHFk2xSbPtYWzuXm05INtkyn9pSn2I9cuCT27yIm1YGGF8CQy/GGR5K14kmSnRuFhi1ODiyGSP2ytSJMki2uFm8jKVSC8cHgWly/mVLy0xuUgTm/Ua89XYq9MzVRbxJpWYhoIumbrJFNrlJPFBOwNBdwwiSW+wvt4SiHXJC9znN1SUhXRlHdOR1e33EnVx9/TRuEh0k4mFPeb6I/Sz6LWEC8cALO2Dagu2DLIqGWmKN1QmKzwXdzGwCyY9MYZqh3+ePdY3LWGwPFPUbSofe1tTMZlFZbAIhyIa5AGCK9bHIDt6xjc2uYQuLAmEbCAFbW42+P2lmsCg8eCsntDJHPA67xEYJhGzB5jPD/lEWhYMVvfcUZd2G7SwKTJRAiLTbuNPrj7wZtjpo0glVO4FkD7JjjydqIJn6+nlYXL5rHTYHTDi/21NA5yOuDkXUQAiMhD4OYYR2cXVwEAh9T+QVOOIUV4cilkBcccbwI3yewHCvVlAn93B1KHyBYLHA2z0yUckmm9ZxNx/ppNzn6cDOf5mrg4OON7QTNkMKzEDKFTp4cjcfZFu3c8R1rg4OddJG/ulAXHGlYMRuamWTjU6paVSqVGxq4W0e04FYJmocmMmOQLq5OjhYv9sKCuQDrp50EMgjzw+rKe7bEOkbG5sTiyYN+iT2bYhuwyoWBUcdp43rnVFH7mDRpIERMI4o4p3VEYXwb4ryqc13uS3qrOeK50Yg4fPDg4YS06pwjHdkM4sqDt2yeHbJh9Ha1AoW2YG3ck0rxMdOmA8rW8gG7L0xAullkT10A4gAChdxjrxgPVcDkM9N2WME8fmDI5ayOBrIj4M6EBWM6GBR7GCB6fTbkl0sig5dY9LVjKdc5Q2CiXNkeJXsNHMSNm/Heh1ETHBBdymOnBne0DwH+vR0okK2Yr+g86BrTBgZ9Bl05Gu6KLBZmqmPugNWOgo6USp3ZerBIzMwzrDaZ2jTpN2Ym06I2rGx2WER0ZcLWg+m01hN4wJuWllUzmABQPlS7Aj9ZSAeIofOwql2OOv9rdBOdSRDP33s0P2ULtEZe04EgW4A4WCfmaBhC4L8gf69sS2xUaATAB0hsFQOl3K2ZMHZifr8kX+qykFLKF3ZYJq0qcDUn6Hipir55246ilPgldxUq1SpUuVvJ5H4BV5QFaHiDdq+AAAAAElFTkSuQmCC"></div>
+                                    <div class="time_text">
+                                        <div class="total_time">0.5</div>
+                                        <div class="total_hours">Total hours</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="my-teachers__item">
+                                <div class="user">
+                                    <div class="photo"><img src="assets/img/avatar1.jpg"></div>
+                                    <div class="data">
+                                        <div class="name">Artur</div>
+                                        <div class="position">Art Subject</div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <div class="clock"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARdSURBVGhD7ZlJaxRBFMfHDVwQPbhcPYm7fgNPeoqZ7jhJVWIwKhLjWTFgDAFR8BQ3XL6AWzQEzcXlInG/uN2CEBfQRM3MQLy4j/9X87qmOjNxuqt7ouL8oJimXtVbuupVVdckqlSpUuX/JdfVNTXjNqxNO2I3yvGMK3syjrylCp7TrjyWdmQbtcklElO4299DZrNcAydPZlwxAodzwYoYUYElm1azmj9HerNcCWf6UX6WdrZ8ob4YvaujjljOaiePXGvrDDhwCA58LeHYN/zew+/ptCv2ok2rKvSMOozEfW7j7+fIL6Qzt379dDZTWUY2ycWY8w+KHHHFk2xSbPtYWzuXm05INtkyn9pSn2I9cuCT27yIm1YGGF8CQy/GGR5K14kmSnRuFhi1ODiyGSP2ytSJMki2uFm8jKVSC8cHgWly/mVLy0xuUgTm/Ua89XYq9MzVRbxJpWYhoIumbrJFNrlJPFBOwNBdwwiSW+wvt4SiHXJC9znN1SUhXRlHdOR1e33EnVx9/TRuEh0k4mFPeb6I/Sz6LWEC8cALO2Dagu2DLIqGWmKN1QmKzwXdzGwCyY9MYZqh3+ePdY3LWGwPFPUbSofe1tTMZlFZbAIhyIa5AGCK9bHIDt6xjc2uYQuLAmEbCAFbW42+P2lmsCg8eCsntDJHPA67xEYJhGzB5jPD/lEWhYMVvfcUZd2G7SwKTJRAiLTbuNPrj7wZtjpo0glVO4FkD7JjjydqIJn6+nlYXL5rHTYHTDi/21NA5yOuDkXUQAiMhD4OYYR2cXVwEAh9T+QVOOIUV4cilkBcccbwI3yewHCvVlAn93B1KHyBYLHA2z0yUckmm9ZxNx/ppNzn6cDOf5mrg4OON7QTNkMKzEDKFTp4cjcfZFu3c8R1rg4OddJG/ulAXHGlYMRuamWTjU6paVSqVGxq4W0e04FYJmocmMmOQLq5OjhYv9sKCuQDrp50EMgjzw+rKe7bEOkbG5sTiyYN+iT2bYhuwyoWBUcdp43rnVFH7mDRpIERMI4o4p3VEYXwb4ryqc13uS3qrOeK50Yg4fPDg4YS06pwjHdkM4sqDt2yeHbJh9Ha1AoW2YG3ck0rxMdOmA8rW8gG7L0xAullkT10A4gAChdxjrxgPVcDkM9N2WME8fmDI5ayOBrIj4M6EBWM6GBR7GCB6fTbkl0sig5dY9LVjKdc5Q2CiXNkeJXsNHMSNm/Heh1ETHBBdymOnBne0DwH+vR0okK2Yr+g86BrTBgZ9Bl05Gu6KLBZmqmPugNWOgo6USp3ZerBIzMwzrDaZ2jTpN2Ym06I2rGx2WER0ZcLWg+m01hN4wJuWllUzmABQPlS7Aj9ZSAeIofOwql2OOv9rdBOdSRDP33s0P2ULtEZe04EgW4A4WCfmaBhC4L8gf69sS2xUaATAB0hsFQOl3K2ZMHZifr8kX+qykFLKF3ZYJq0qcDUn6Hipir55246ilPgldxUq1SpUuVvJ5H4BV5QFaHiDdq+AAAAAElFTkSuQmCC"></div>
+                                    <div class="time_text">
+                                        <div class="total_time">4.0</div>
+                                        <div class="total_hours">Total hours</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 
+                        <span class="aside-alerts__text">
+                            No booked teachers
+                        </span> -->
+                    </li>
+                    <li class="aside-alerts__item">
+                        <span class="aside-alerts__title jp-menu__ttl">
+                            My homeworks
+                        </span>
+                        <span class="aside-alerts__text">
+                            You have 2 homeworks assigned
+                        </span>
+
+                        <button type="submit" class="btn-submit">I have a new homework <i class="fas fa-angle-right"></i></button>
+
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main id="panel" class="page__main main panel block shadowedBox jp-page__main">
+            <section class="jp-header__filter">
+                <h1 class="main-header__page-title page-title">
+                    Invite a Teacher
+                </h1>
+                <form class="filter">
+                    <div class="custom-select">
+                        <select name="subject" id="subject">
+                            <option disabled>Subject</option>
+                            <option value="Math" selected>Math</option>
+                            <option value="History">History</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+                        <select name="experience" id="experience">
+                            <option value="Experience" disabled selected>Experience</option>
+                            <option value="Rising Talent">Rising Talent</option>
+                            <option value=" 1 year">
+                                1 year</option>
+                        </select> </div>
+                    <div class="custom-select">
+                        <select name="popularity" id="popularity">
+                            <option value="Popularity" selected disabled>Popularity</option>
+                            <option value="Rising Talent">Rising Talent</option>
+                            <option value=" 1 year">
+                                1 year</option>
+                        </select> </div>
+                    <div class="custom-select">
+                        <select name="filters" id="filters">
+                            <option value="More Filters" selected disabled>More Filters</option>
+                            <option value="Rising Talent">Rising Talent</option>
+                            <option value=" 1 year">
+                                1 year</option>
+                        </select> </div>
+                </form>
+
+
+                <!-- <select name="basic[]" multiple="multiple" class="active">
+                </select> -->
+
+
+
+            </section>
+            <section class="teachers">
+                <article class="teacher-card">
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__avatar">
+                            <img src="assets/img/teacher_john.png" alt="">
+                        </div>
+                    </div>
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__row">
+                            <div class="teacher-card__general">
+                                <h3 class="teacher-card__name">
+                                    John
+                                </h3>
+                                <div class="teacher-card__rating rating">
+                                    <div class="rating__stars">
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                    </div>
+                                    <div class="rating__text">
+                                        <span class="rating__rate">
+                                            4.7
+                                        </span>
+                                        (5 Reviews)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teacher-card__features">
+                                <ul class="teacher-card__features-list">
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Distance
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            2km away
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Experience
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-clock"></i>
+                                            150 hours on JP
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Popularity
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-heart"></i>
+                                            1,500 likes
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="teacher-card__row details__row">
+                            <div class="teacher-card__info">
+                                <p class="teacher-card__caption">
+                                    Harvard University, BS Mathematics,
+                                    Math Teacher
+                                </p>
+                                <p class="teacher-card__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                            <a href="#" class="teacher-card__details">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="teacher-card__detail-tooltip">
+                                    View Details
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+                <article class="teacher-card">
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__avatar">
+                            <img src="assets/img/teacher_steve.png" alt="">
+                        </div>
+                    </div>
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__row">
+                            <div class="teacher-card__general">
+                                <h3 class="teacher-card__name">
+                                    Steve
+                                </h3>
+                                <div class="teacher-card__rating rating">
+                                    <div class="rating__stars">
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                    </div>
+                                    <div class="rating__text">
+                                        <span class="rating__rate">
+                                            4.7
+                                        </span>
+                                        (5 Reviews)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teacher-card__features">
+                                <ul class="teacher-card__features-list">
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Distance
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            2km away
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Experience
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-clock"></i>
+                                            150 hours on JP
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Popularity
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-heart"></i>
+                                            1,500 likes
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="teacher-card__row details__row">
+                            <div class="teacher-card__info">
+                                <p class="teacher-card__caption">
+                                    Harvard University, BS Mathematics,
+                                    Math Teacher
+                                </p>
+                                <p class="teacher-card__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                            <a href="#" class="teacher-card__details">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="teacher-card__detail-tooltip">
+                                    View Details
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+                <article class="teacher-card">
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__avatar">
+                            <img src="assets/img/teacher_mark.png" alt="">
+                        </div>
+                    </div>
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__row">
+                            <div class="teacher-card__general">
+                                <h3 class="teacher-card__name">
+                                    Mark Ivan
+                                </h3>
+                                <div class="teacher-card__rating rating">
+                                    <div class="rating__stars">
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                    </div>
+                                    <div class="rating__text">
+                                        <span class="rating__rate">
+                                            4.7
+                                        </span>
+                                        (5 Reviews)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teacher-card__features">
+                                <ul class="teacher-card__features-list">
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Distance
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            2km away
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Experience
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-clock"></i>
+                                            150 hours on JP
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Popularity
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-heart"></i>
+                                            1,500 likes
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="teacher-card__row details__row">
+                            <div class="teacher-card__info">
+                                <p class="teacher-card__caption">
+                                    Harvard University, BS Mathematics,
+                                    Math Teacher
+                                </p>
+                                <p class="teacher-card__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                            <a href="#" class="teacher-card__details">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="teacher-card__detail-tooltip">
+                                    View Details
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+                <article class="teacher-card">
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__avatar">
+                            <img src="assets/img/teacher_vanessa.png" alt="">
+                        </div>
+                    </div>
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__row">
+                            <div class="teacher-card__general">
+                                <h3 class="teacher-card__name">
+                                    Vanessa
+                                </h3>
+                                <div class="teacher-card__rating rating">
+                                    <div class="rating__stars">
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                    </div>
+                                    <div class="rating__text">
+                                        <span class="rating__rate">
+                                            4.7
+                                        </span>
+                                        (5 Reviews)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teacher-card__features">
+                                <ul class="teacher-card__features-list">
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Distance
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            2km away
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Experience
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-clock"></i>
+                                            150 hours on JP
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Popularity
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-heart"></i>
+                                            1,500 likes
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="teacher-card__row details__row">
+                            <div class="teacher-card__info">
+                                <p class="teacher-card__caption">
+                                    Harvard University, BS Mathematics,
+                                    Math Teacher
+                                </p>
+                                <p class="teacher-card__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                            <a href="#" class="teacher-card__details">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="teacher-card__detail-tooltip">
+                                    View Details
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="teacher-card">
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__avatar">
+                            <img src="assets/img/teacher_vanessa.png" alt="">
+                        </div>
+                    </div>
+                    <div class="teacher-card__column">
+                        <div class="teacher-card__row">
+                            <div class="teacher-card__general">
+                                <h3 class="teacher-card__name">
+                                    Vanessa
+                                </h3>
+                                <div class="teacher-card__rating rating">
+                                    <div class="rating__stars">
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                        <i class="fas fa-star m-red"></i>
+                                    </div>
+                                    <div class="rating__text">
+                                        <span class="rating__rate">
+                                            4.7
+                                        </span>
+                                        (5 Reviews)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teacher-card__features">
+                                <ul class="teacher-card__features-list">
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Distance
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            2km away
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Experience
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-clock"></i>
+                                            150 hours on JP
+                                        </span>
+                                    </li>
+                                    <li class="teacher-card__feature-item">
+                                        <span class="teacher-card__feature-title">
+                                            Popularity
+                                        </span>
+                                        <span class="teacher-card__feature-text">
+                                            <i class="fas fa-heart"></i>
+                                            1,500 likes
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="teacher-card__row details__row">
+                            <div class="teacher-card__info">
+                                <p class="teacher-card__caption">
+                                    Harvard University, BS Mathematics,
+                                    Math Teacher
+                                </p>
+                                <p class="teacher-card__description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis
+                                </p>
+                            </div>
+                            <a href="#" class="teacher-card__details">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="teacher-card__detail-tooltip">
+                                    View Details
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+            <div class="paginator">
+                <ul class="paginator__list">
+                    <li class="paginator__item">
+                        <button class="paginator__btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </li>
+                    <li class="paginator__item">
+                        <button class="paginator__btn m-active">01</button>
+                    </li>
+                    <li class="paginator__item">
+                        <button class="paginator__btn">02</button>
+                    </li>
+                    <li class="paginator__item">
+                        <button class="paginator__btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <!-- page__wrapper end -->
+    </div>
+    <footer id="footer" class="fixed-footer sidebar-pull">
+        <div class="container fadeIn slow wow">
+            <div class="row">
+                <div class="logo">
+                    <div class="label">jeprogresse.fr</div>
+                    <a href="index.html"><img src="assets/img/logo_48.png" alt="jeprogresse.fr logo"></a>
+                </div>
+                <div class="adress">
+                    <div class="label">Address</div>
+                    <div class="text">Paris</div>
+                </div>
+                <div class="siren">
+                    <div class="label">SIREN</div>
+                    <div class="text">841 228 125</div>
+                </div>
+                <div class="email">
+                    <div class="label">Email</div>
+                    <div class="text"><a href="mailto:contact@jeprogresse.fr">contact@jeprogresse.fr</a></div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>&copy; Copyright JeProgresse 2018-2020</span>
+                <span><a href="#">Privacy Policy</a></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    if (document.documentElement.clientWidth < 768) {
+        console.log("mobile");
+        var slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'padding': 290,
+            'tolerance': 70
+        });
+
+        document.querySelector('.js-slideout-toggle').addEventListener('click', function () {
+            slideout.toggle();
+            // slideout.open();
+        });
+
+        var fixed = document.querySelector('.fixed-header');
+        var sb = document.querySelector('.sidebar-pull');
+        var footer = document.querySelector('.fixed-footer');
+        // $('sidebar-pull').css();
+
+        slideout.on('translate', function (translated) {
+            // sb.classList.add("sidebar-open");
+            fixed.style.transform = 'translateX(' + translated + 'px)';
+            footer.style.transform = 'translateX(' + translated + 'px)';
+            // $('sidebar-pull').css("transform", 'translateX(' + translated + 'px)');
+
+        });
+
+        slideout.on('beforeopen', function () {
+            fixed.style.transition = 'transform 300ms ease';
+            fixed.style.transform = 'translateX(290px)';
+
+            sb.classList.add("sidebar-open");
+
+            footer.style.transition = 'transform 300ms ease';
+            footer.style.transform = 'translateX(290px)';
+
+            this.panel.classList.add('panel-open');
+        });
+
+        slideout.on('beforeclose', function () {
+            sb.classList.remove("sidebar-open");
+            $('sidebar-pull').removeClass("sidebar-open");
+
+            this.panel.classList.remove('panel-open');
+            this.panel.removeEventListener('click', close);
+
+            // fixed.style.transition = 'transform 300ms ease';
+            fixed.style.transform = 'translateX(0px)';
+            // footer.style.transition = 'transform 300ms ease';
+            footer.style.transform = 'translateX(0px)';
+        });
+
+        slideout.on('open', function () {
+            fixed.style.transition = '';
+            footer.style.transition = '';
+
+            this.panel.addEventListener('click', close);
+        });
+
+        slideout.on('close', function () {
+            fixed.classList.remove("sidebar-open");
+            fixed.style.transform = 'translateX(0px)';
+            // fixed.style.transition = '';
+        });
+
+        function close(eve) {
+            eve.preventDefault();
+            slideout.close();
+        }
+
+    }
+
+    // select styles
+    var x, i, j, selElmnt, a, b, c;
+    x = document.getElementsByClassName("custom-select");
+    for (i = 0; i < x.length; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        a = document.createElement("div");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < selElmnt.length; j++) {
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function (e) {
+                var y, i, k, s, h;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < s.length; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("selected");
+                        for (k = 0; k < y.length; k++) {
+                            y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "selected");
+                        break;
+                    }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function (e) {
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+        });
+    }
+
+    function closeAllSelect(elmnt) {
+        var x, y, i, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        for (i = 0; i < y.length; i++) {
+            if (elmnt == y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < x.length; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+
+    document.addEventListener("click", closeAllSelect);
+</script>
+
+</html>

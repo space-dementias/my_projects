@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ребёнок Эдик Проскоряков</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/jQuery-plugin-progressbar.css">
+    <link rel="stylesheet" href="assets/css/jssocials.css">
+    <link rel="stylesheet" href="assets/css/jssocials-theme-minima.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    <script src="assets/js/jssocials.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jQuery-plugin-progressbar.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $(".progress-bar").loading();
+
+            $('.filter .show-all').click(function () {
+                if ($('.filter input[type="checkbox"]').is(':checked')) {
+                    $('.filter input[type="checkbox"]:checked').removeAttr('checked');
+                }
+                else {
+                    $('.filter input[type="checkbox"]').attr('checked', 'checked');
+                }
+            });
+
+            $('.carousel').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.carousel-nav'
+            });
+            $('.carousel-nav').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                asNavFor: '.carousel',
+                centerMode: true,
+                focusOnSelect: true
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 job-hunt">
+                <p>Проект представлен
+                    <a href="#"><img src="assets/img/jobhunt.png" alt=""></a>
+                </p>
+            </div>
+            <div class="col-md-5 socials">
+                <span>Мы в сети</span>
+                <ul>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 notification">
+                <ul>
+                    <li>
+                        <button type="button" id="notification" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="far fa-bell"></i><span class="qty">10</span></button>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <h4>Последние новости</h4>
+                                <ul>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                </ul>
+                                <a href="news.html">Все события</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" id="messages" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="far fa-envelope"></i><span class="qty">3</span></button>
+                        <div class="dropdown messages">
+                            <div class="dropdown-menu" aria-labelledby="messages">
+                                <h4>Сообщения</h4>
+                                <div class="row">
+                                    <div class="col-md-3 user-img">
+                                        <img src="assets/img/blog/blogger3.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-6 user-msg">
+                                        <a href="profile.html" class="user-profile">Константин</a>
+                                        <a href="profile_conversation.html">Доктора провели сканирование брюшной
+                                            полости</a>
+                                    </div>
+                                    <div class="col-md-3 date">
+                                        <time>2 hours ago</time>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 user-img">
+                                        <img src="assets/img/blog/blogger4.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-6 user-msg">
+                                        <a href="profile.html" class="user-profile">Константин</a>
+                                        <a href="profile_conversation.html">Доктора провели сканирование брюшной
+                                            полости</a>
+                                    </div>
+                                    <div class="col-md-3 date">
+                                        <time>2 hours ago</time>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 user-img">
+                                        <img src="assets/img/blog/blogger5.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-6 user-msg">
+                                        <a href="profile.html" class="user-profile">Константин</a>
+                                        <a href="profile_conversation.html">Доктора провели сканирование брюшной
+                                            полости</a>
+                                    </div>
+                                    <div class="col-md-3 date">
+                                        <time>2 hours ago</time>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 login">
+                <button type="button" id="login" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Вход и регистрация
+                </button>
+                <div class="dropdown">
+                    <div class="dropdown-menu" aria-labelledby="login">
+                        <form id="login-form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="login-email"
+                                       placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="login-pass" placeholder="Пароль">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Войти</button>
+                            <a class="forgot-pass" href="forgot_password.html">Забыли пароль?</a>
+                            <a href="sign_up.html" id="registration"><span>Регистрация</span></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="head-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+            <div class="col-md-6 tagline">
+                <h2>Фонд помощи детям <br> с онкологическими заболеваниями</h2>
+            </div>
+            <div class="col-md-3 help-btn">
+                <a href="donation.html"><img src="assets/img/heart_white.png" alt="">Помочь фонду</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+                        aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="main-menu navbar-nav">
+                        <li><a href="news.html">Новости</a></li>
+                        <li class="active"><a href="children.html">Дети</a></li>
+                        <li><a href="hospitals.html">Клиники мира</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="people.html">Люди</a></li>
+                        <li><a href="about.html">О фонде</a></li>
+                        <li><a href="donation_not_loged.html">Помощь фонду</a></li>
+                        <li><a href="blogs.html">Блоги</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="content hospitals-pg children-pg child-pg col-md-12">
+                <div class="row">
+                    <span class="quick">Срочно!</span>
+                    <div class="col-md-4 child-img">
+                        <img src="assets/img/children/eduard.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 hosp-txt">
+                        <h4 class="name">Эдик Проскоряков</h4>
+                        <div class="age">7 лет</div>
+                        <div class="diagnosis">Лейкимия</div>
+                        <h4>Необходимо</h4>
+                        <p class="necessary">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi consequuntur
+                            ducimus error et explicabo magnam molestias mollitia necessitatibus odit!
+                        </p>
+                        <div class="page-share">
+                            <div id="share"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 loading">
+                        <div class="progress-bar" data-percent="85" data-duration="1000" data-color="#ededed,#079260">
+                            <div class="info">
+                                <p class="pink">125 000$<br>необходимо</p>
+                                <p class="green">собрано<br>118 352$</p>
+                            </div>
+                        </div>
+                        <a href="child_donation.html" class="help-child">Помочь ребёнку</a>
+                    </div>
+                </div>
+                <div class="row tabs">
+                    <div class="col-md-4 same-diagnosis">
+                        <h3>Дети с таким диагнозом</h3>
+                        <div class="row">
+                            <div class="col-md-3 article-img">
+                                <img src="assets/img/big_heart/child1.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 article-info">
+                                <h4><a href="child.html">Витя Ефремов</a></h4>
+                                <p>5 лет, рак мозга</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 article-img">
+                                <img src="assets/img/big_heart/child2.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 article-info">
+                                <h4><a href="child.html">Ксюша Захарова</a></h4>
+                                <p>11 лет, рак легкого</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 article-img">
+                                <img src="assets/img/big_heart/child3.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 article-info">
+                                <h4><a href="child.html">Витя Ефремов</a></h4>
+                                <p>2 года, лейкимия</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 child-info">
+                        <ul class="nav nav-tabs" id="child-info" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab"
+                                   aria-controls="home" aria-selected="true">История</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="cure-tab" data-toggle="tab" href="#cure" role="tab"
+                                   aria-controls="profile" aria-selected="false">Подробности лечения</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="family-tab" data-toggle="tab" href="#family" role="tab"
+                                   aria-controls="contact" aria-selected="false">Ответственные и семья</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="document-tab" data-toggle="tab" href="#document" role="tab"
+                                   aria-controls="contact" aria-selected="false">Документы</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="child-content">
+                            <div class="tab-pane fade show active" id="history" role="tabpanel"
+                                 aria-labelledby="history-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magnam,
+                                    voluptatibus? Aliquid, ullam velit! A cupiditate deleniti, dicta dolorum ducimus
+                                    facere fugiat, in laboriosam neque nesciunt porro possimus quaerat ullam?
+                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magnam,
+                                    voluptatibus? Aliquid, ullam velit! </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magnam,
+                                    voluptatibus? Aliquid, ullam velit! A cupiditate deleniti, dicta dolorum ducimus
+                                    facere fugiat, in laboriosam neque nesciunt porro possimus quaerat ullam?
+                                </p>
+
+                                <div class="carousel">
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <div><img src="assets/img/news-post.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <div><img src="assets/img/news-post.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <div><img src="assets/img/news-post.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                </div>
+                                <div class="carousel-nav">
+                                    <button type="button" class="slick-prev">
+                                        <i class="fas fa-chevron-circle-left"></i>
+                                    </button>
+                                    <div><img src="assets/img/news-post.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <div><img src="assets/img/news-post.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <div><img src="assets/img/news-post.jpg" alt=""></div>
+                                    <div><img src="assets/img/hospital.jpg" alt=""></div>
+                                    <button type="button" class="slick-next">
+                                        <i class="fas fa-chevron-circle-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cure" role="tabpanel" aria-labelledby="cure-tab">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magnam,
+                                    voluptatibus? Aliquid, ullam velit! A cupiditate deleniti, dicta dolorum ducimus
+                                    facere fugiat, in laboriosam neque nesciunt porro possimus quaerat ullam?
+                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magnam,
+                                    voluptatibus? Aliquid, ullam velit! </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero magnam,
+                                    voluptatibus? Aliquid, ullam velit! A cupiditate deleniti, dicta dolorum ducimus
+                                    facere fugiat, in laboriosam neque nesciunt porro possimus quaerat ullam?
+                                </p>
+                                <ul class="docs">
+                                    <li><img src="assets/docs/doc.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                    <li><img src="assets/docs/pdf.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                    <li><img src="assets/docs/xls.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                    <li><img src="assets/docs/jpg.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                    <li><img src="assets/docs/png.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade feedback-pg" id="family" role="tabpanel" aria-labelledby="family">
+                                <div class="row">
+                                    <div class="col-md-2 feed-img">
+                                        <img src="assets/img/feedback/father.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-10 feed-txt">
+                                        <h4>Константин Константинопольский</h4>
+                                        <h5>Отец</h5>
+                                        <a href="mailto:support@gmail.com" class="send-msg">Отправить сообщение</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 feed-img">
+                                        <img src="assets/img/feedback/mother.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-10 feed-txt">
+                                        <h4>Екатерина Константинопольская</h4>
+                                        <h5>Отец</h5>
+                                        <a href="mailto:support@gmail.com" class="send-msg">Отправить сообщение</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 feed-img">
+                                        <img src="assets/img/feedback/doctor.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-10 feed-txt">
+                                        <h4>Алефтина Николаевна Косарева</h4>
+                                        <h5>Врач-онколог</h5>
+                                        <a href="mailto:support@gmail.com" class="send-msg">Отправить сообщение</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="document" role="tabpanel" aria-labelledby="document-tab">
+                                <ul class="docs">
+                                    <li><img src="assets/docs/doc.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                    <li><img src="assets/docs/pdf.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                    <li><img src="assets/docs/xls.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                    <li><img src="assets/docs/jpg.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                    <li><img src="assets/docs/png.png" alt=""><a href="assets/docs/document.txt"
+                                                                                 download="">История
+                                        болезни</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 copyrights">© <a href="index.html">Благотворительный фонд Angels Care 2013</a></div>
+            <div class="col-md-4 socials">
+                <span>Мы в сети</span>
+                <ul>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 btm-menu">
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about_contact.html">Обратная связь</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+.map__wrapper {
+    padding: 0
+}
+
+.map__icon {
+    margin-top: -10px;
+    max-width: 195px;
+    max-height: 140px
+}
+
+.map__sidebar-wrapper {
+    padding-right: 11px
+}
+
+.map__sidebar {
+    margin-top: 30px
+}
+
+.map__search-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 19px
+}
+
+.map__search-input {
+    color: #4d4d4d;
+    width: 100%;
+    padding: 10px 45px 10px 25px;
+    border: 1px solid #dadada;
+    border-right: 0;
+    font-size: 1rem;
+    background-color: #fff;
+    box-shadow: inset 0 0 8.64px .36px rgba(0, 0, 0, .23)
+}
+
+.map__search-input::-webkit-input-placeholder {
+    color: #cbcbcb
+}
+
+.map__search-input::-moz-placeholder {
+    color: #cbcbcb
+}
+
+.map__search-input:-moz-placeholder {
+    color: #cbcbcb
+}
+
+.map__search-input:-ms-input-placeholder {
+    color: #cbcbcb
+}
+
+.map__search-icon {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    width: 45px;
+    font-size: 1rem;
+    background-image: url(../../../img/images/search.png);
+    background-color: inherit;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer
+}
+
+.map__filter-item {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    padding: 20px 30px 10px;
+    margin-bottom: 9px;
+    background-color: #f4f4f4;
+    -webkit-transition: box-shadow .2s ease;
+    -moz-transition: box-shadow .2s ease;
+    transition: box-shadow .2s ease;
+    cursor: pointer
+}
+
+.map__filter-item:before {
+    content: '';
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    height: 12px;
+    width: 8px;
+    background: url(../../../images/right-arrow.svg) center 0/cover
+}
+
+.map__filter-item p {
+    color: #656565;
+    margin: 0 0 10px;
+}
+
+.map__filter-item:hover {
+    box-shadow: 0 1px 9px 1px rgba(0, 0, 0, .19)
+}
+
+.map__filter-icon {
+    height: 30px;
+    margin-right: 32px
+}
+
+.map__hover-item-wrapper {
+    display: none;
+    position: absolute;
+    margin-left: 260px;
+    margin-right: -300px;
+    z-index: 111;
+    box-shadow: 0 5px 12.74px .26px rgba(0, 0, 0, .2)
+}
+
+.map__filter-item-hover {
+    position: relative;
+    padding: 16px 20px 20px 30px;
+    border-left: 2px solid #27ae60;
+    background: #fff
+}
+
+.map__filter-item-hover:before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    bottom: 100px;
+    border: 12px solid transparent;
+    border-right: 10px solid #27ae60
+}
+
+.map__filter-checkbox-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    height: 14px;
+    width: 14px;
+    background: url(../../img/images/icons8-delete-filled-100.png) center 0/cover;
+    cursor: pointer
+}
+
+.map__filter-checkbox {
+    margin-bottom: 18px
+}
+
+.map__filter-checkbox:last-child {
+    margin-bottom: 0
+}
+
+.map__title {
+    position: relative;
+    max-height: 67px;
+    z-index: 9;
+    padding: 24px 0;
+    margin-left: -100px;
+    text-align: center;
+    font-size: 21px;
+    color: #4b4b4b;
+    background: url(../../../images/rect.png) center 0/cover
+}
+
+.map__title:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: url(../../../images/rectline.png) center 0/cover
+}
+
+.map__title p {
+    margin: 0;
+    line-height: 1
+}
+
+#map {
+    margin-top: 30px;
+    height: 500px;
+}
+
+.checkbox {
+    display: none
+}
+
+.checkbox-custom {
+    position: relative;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ccc;
+    background-color: #e1e1e1
+}
+
+.checkbox-custom:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    box-shadow: inset 0 3px 4.45px .55px rgba(0, 0, 0, .3)
+}
+
+.checkbox-custom, .label {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.checkbox:checked + .checkbox-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background-color: #2ead64
+}

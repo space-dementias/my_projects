@@ -1,0 +1,108 @@
+.navigation {
+    padding: 5px 0 5px 0;
+    background-color: #828c4c
+}
+
+.navigation__logo-wrapper {
+    text-align: right
+}
+
+.navigation__menu-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.navigation__menu-item {
+    margin-right: 38px;
+    font-family: GothaProReg;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #292929
+}
+
+.navigation__menu-item:last-child {
+    margin-right: 10px
+}
+
+.navigation__menu-item:hover {
+    color: #f6b825
+}
+
+.navigation__icon-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 38px
+}
+
+.navigation__icon-separator {
+    height: 33px;
+    width: 1px;
+    margin: 0 28px;
+    background-color: #4d4d4d
+}
+
+.navigation__icon {
+    height: 23px;
+    width: 23px;
+    cursor: pointer
+}
+
+.navigation__login-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.navigation__login-button {
+    border: 2px solid #323232;
+    border-radius: 15.5px;
+    padding: 7px 30px;
+    font-family: Lato-Regular;
+    font-size: .9rem;
+    background-color: transparent;
+    color: #3d3e35
+}
+
+.navigation__login-button:hover {
+    border-color: #d2e85b;
+    color: #3d3e35
+}
+.navigation__login-button:active,
+.navigation__login-button:focus{
+    background: #6d6d6d;
+    color: #fff;
+    border-color: #6d6d6d;
+}

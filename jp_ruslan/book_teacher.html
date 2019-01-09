@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Book Teacher</title>
+    <meta charset="UTF-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/custombox.min.css">
+    <link rel="stylesheet" href="css/sol.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/elements.css">
+    <link rel="stylesheet" href="css/dialogs.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/custombox.min.js"></script>
+    <script src="js/custombox.legacy.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/sol.js"></script>
+
+<body class="page">
+
+<a href="#" id="toggle">Book Teacher</a>
+
+<div id="book_teacher" class="modal">
+    <form class="modal_container">
+        <header>
+            <h2>Book a Teacher</h2>
+            <p>Make John as your Match Teacher</p>
+            <span class="btn" id="close"><img src="assets/img/cross.png" alt="close modal"></span>
+        </header>
+        <section>
+            <div class="options">
+                <ol>
+                    <li class="checked">Schedule Request</li>
+                    <li>Price Range & Level</li>
+                    <li>Request Info</li>
+                </ol>
+            </div>
+
+            <div class="main_info step1">
+                <h3>Tell us your schedule and availability</h3>
+                <div class="main_info__row">
+                    <label for="subject">Selected Subject</label>
+                    <input type="text" id="subject" placeholder="Math">
+                </div>
+                <div class="main_info__row">
+                    <label>Is it a short term or a mid/long term need?</label>
+                    <label class="container" name="temporary">Temporary
+                        <input type="radio" checked="checked" id="temporary" name="term">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" name="weekly">Weekly
+                        <input type="radio" id="weekly" name="term">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="main_info__row">
+                    <label>When do you prefer your lessons to start with your teacher?</label>
+                    <input type='text' class='datepicker-here' placeholder="Select a Date"/>
+                </div>
+                <div class="main_info__row">
+                    <label>Sessions</label>
+                    <label class="sessions" for="session1">
+                        <input id="session1" type="radio" name="session" checked="checked">
+                        <span>1</span>
+                    </label>
+                    <label class="sessions" for="session2">
+                        <input id="session2" type="radio" name="session">
+                        <span>2</span>
+                    </label>
+                    <label class="sessions" for="session3">
+                        <input id="session3" type="radio" name="session">
+                        <span>3</span>
+                    </label>
+                    <label class="sessions" for="session4">
+                        <input id="session4" type="radio" name="session">
+                        <span>4</span>
+                    </label>
+                    <label class="sessions" for="session5">
+                        <input id="session5" type="radio" name="session">
+                        <span>5</span>
+                    </label>
+                </div>
+
+                <div class="main_info__row">
+                    <label for="duration">Select lesson duration</label>
+                    <div class="custom-select">
+                        <select name="duration" id="duration">
+                            <option value="30 min" selected>30 min</option>
+                            <option value="60 min">60 min</option>
+                            <option value="90 min">90 min</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <div class="btn-submit next__step">Continue <i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+
+            <div class="main_info step1">
+                <h3>Tell us your schedule and availability</h3>
+                <div class="main_info__row">
+                    <label for="subject2">Selected Subject</label>
+                    <input type="text" id="subject2" placeholder="Math">
+                </div>
+                <div class="main_info__row">
+                    <label>Is it a short term or a mid/long term need?</label>
+                    <label class="container" name="temporary">Temporary
+                        <input type="radio" checked="checked" id="temporary" name="term">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" name="weekly2">Weekly
+                        <input type="radio" id="weekly2" name="term">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="main_info__row">
+                    <label>When do you prefer your lessons to start with your teacher?</label>
+                    <input type='text' class='datepicker-here' placeholder="Select a Date"/>
+                </div>
+                <div class="main_info__row">
+                    <label>Student Availability Time</label>
+                    <label class="sessions avail-time" for="morning">
+                        <input id="morning" type="radio" name="timing" checked="checked">
+                        <span><i class="fas fa-cloud-sun"></i>Morning</span>
+                    </label>
+                    <label class="sessions avail-time" for="afternoon">
+                        <input id="afternoon" type="radio" name="timing">
+                        <span><i class="far fa-sun"></i>Afternoon</span>
+                    </label>
+                    <label class="sessions avail-time" for="evening">
+                        <input id="evening" type="radio" name="timing">
+                        <span><i class="far fa-moon"></i>Evening</span>
+                    </label>
+                </div>
+
+                <div class="buttons">
+                    <div class="btn-submit next__step">Continue <i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+
+            <div class="main_info step1">
+                <h3>Tell us your schedule and availability</h3>
+                <div class="main_info__row">
+                    <label for="subject2">Selected Subject</label>
+                    <input type="text" id="subject2" placeholder="Math">
+                </div>
+                <div class="main_info__row">
+                    <label>Is it a short term or a mid/long term need?</label>
+                    <label class="container" name="temporary">Temporary
+                        <input type="radio" checked="checked" id="temporary" name="term">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" name="weekly2">Weekly
+                        <input type="radio" id="weekly2" name="term">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="main_info__row">
+                    <label>When do you prefer your lessons to start with your teacher?</label>
+                    <input type='text' class='datepicker-here' placeholder="Select a Date"/>
+                </div>
+                <div class="main_info__row">
+                    <label>Sessions</label>
+                    <label class="sessions" for="session1">
+                        <input id="session1" type="radio" name="session" checked="checked">
+                        <span>1</span>
+                    </label>
+                    <label class="sessions" for="session2">
+                        <input id="session2" type="radio" name="session">
+                        <span>2</span>
+                    </label>
+                    <label class="sessions" for="session3">
+                        <input id="session3" type="radio" name="session">
+                        <span>3</span>
+                    </label>
+                    <label class="sessions" for="session4">
+                        <input id="session4" type="radio" name="session">
+                        <span>4</span>
+                    </label>
+                    <label class="sessions" for="session5">
+                        <input id="session5" type="radio" name="session">
+                        <span>5</span>
+                    </label>
+                </div>
+
+                <div class="main_info__row">
+                    <table class="schedule">
+                        <tr>
+                            <th>Date</th>
+                            <th>Student Availability Time</th>
+                            <th>Duration</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>2018-09-30</td>
+                            <td>Afternoon</td>
+                            <td>1 Hour</td>
+                            <td>
+                                <a href="#" class="edit"><i class="fas fa-pen"></i></a>
+                                <a href="#" class="delete"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="btn-submit new_schedule"><i class="fas fa-plus"></i>Add new schedule</button>
+                </div>
+
+                <div class="buttons">
+                    <div class="btn-submit next__step">Continue <i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+            <div class="main_info step1">
+                <h3>Tell us your schedule and availability</h3>
+                <div class="main_info__row">
+                    <label for="subject2">Selected Subject</label>
+                    <input type="text" id="subject2" placeholder="Math">
+                </div>
+                <div class="main_info__row">
+                    <label>Is it a short term or a mid/long term need?</label>
+                    <label class="container" name="temporary">Temporary
+                        <input type="radio" checked="checked" id="temporary" name="term">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" name="weekly2">Weekly
+                        <input type="radio" id="weekly2" name="term">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="main_info__row">
+                    <label>When do you prefer your lessons to start with your teacher?</label>
+                    <input type='text' class='datepicker-here' placeholder="Select a Date"/>
+                </div>
+                <div class="main_info__row">
+                    <label>Sessions</label>
+                    <label class="sessions" for="session1">
+                        <input id="session1" type="radio" name="session" checked="checked">
+                        <span>1</span>
+                    </label>
+                    <label class="sessions" for="session2">
+                        <input id="session2" type="radio" name="session">
+                        <span>2</span>
+                    </label>
+                    <label class="sessions" for="session3">
+                        <input id="session3" type="radio" name="session">
+                        <span>3</span>
+                    </label>
+                    <label class="sessions" for="session4">
+                        <input id="session4" type="radio" name="session">
+                        <span>4</span>
+                    </label>
+                    <label class="sessions" for="session5">
+                        <input id="session5" type="radio" name="session">
+                        <span>5</span>
+                    </label>
+                </div>
+
+                <div class="main_info__row">
+                    <table class="schedule">
+                        <tr>
+                            <th>Date</th>
+                            <th>Student Availability Time</th>
+                            <th>Duration</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>2018-09-30</td>
+                            <td>Afternoon</td>
+                            <td>1 Hour</td>
+                            <td>
+                                <a href="#" class="edit"><i class="fas fa-pen"></i></a>
+                                <a href="#" class="delete"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018-09-30</td>
+                            <td>Evening</td>
+                            <td>1 Hour</td>
+                            <td>
+                                <a href="#" class="edit"><i class="fas fa-pen"></i></a>
+                                <a href="#" class="delete"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <button class="btn-submit new_schedule"><i class="fas fa-plus"></i>Add new schedule</button>
+                </div>
+
+                <div class="buttons">
+                    <div class="btn-submit next__step">Continue <i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+
+            <div class="main_info step2">
+                <h3>Set your level and preferred price range</h3>
+                <div class="main_info__row">
+                    <label>Student Level</label>
+                    <label class="sessions level" for="beginner">
+                        <input id="beginner" type="radio" name="level" checked="checked">
+                        <span>
+                                <img src="assets/img/beginner.png" alt="beginner">
+                                Beginner
+                            </span>
+                    </label>
+                    <label class="sessions level" for="notions">
+                        <input id="notions" type="radio" name="level">
+                        <span>
+                                <img src="assets/img/notions.png" alt="notions">
+                                Notions
+                            </span>
+                    </label>
+                    <label class="sessions level" for="average">
+                        <input id="average" type="radio" name="level">
+                        <span>
+                                <img src="assets/img/average.png" alt="average">
+                                Average
+                            </span>
+                    </label>
+                    <label class="sessions level" for="good">
+                        <input id="good" type="radio" name="level">
+                        <span>
+                                <img src="assets/img/good.png" alt="good">
+                                Good
+                            </span>
+                    </label>
+                    <label class="sessions level" for="advanced">
+                        <input id="advanced" type="radio" name="level">
+                        <span>
+                                <img src="assets/img/advanced.png" alt="advanced">
+                                Advanced
+                            </span>
+                    </label>
+                </div>
+                <div class="main_info__row">
+                    <label for="range">Price Range</label>
+                    <input type="text" id="range" name="range"/>
+                </div>
+                <div class="buttons">
+                    <div class="btn-submit next__step">Continue <i class="fas fa-angle-right"></i></div>
+                </div>
+
+            </div>
+
+            <div class="main_info step3">
+
+                <h3>We’re almost finished Laura!</h3>
+                <div class="main_info__row">
+                    <label for="request">Set a title for your request</label>
+                    <input type="text" id="request" placeholder="EX: Math teacher needed urgently">
+                </div>
+                <div class="main_info__row">
+                    <label>Please describe what you need in some words</label>
+                    <textarea></textarea>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="btn-submit">Continue <i class="fas fa-angle-right"></i></button>
+                </div>
+
+            </div>
+
+        </section>
+    </form>
+
+</div>
+
+</body>
+
+<script>
+
+    // modal
+    document.getElementById("toggle").onclick = function () {
+        var modal = new Custombox.modal({
+            content: {
+                effect: 'fadein',
+                target: '#book_teacher'
+            }
+        });
+
+        modal.open();
+    };
+
+    document.getElementById("close").onclick = function () {
+        Custombox.modal.close();
+    };
+
+    // slides
+    const cards = document.querySelectorAll('.main_info'),
+        nexts = document.querySelectorAll('.next__step'),
+        ixs = document.querySelectorAll('.btn-back');
+    nexts.forEach((next, i) => {
+        next.addEventListener('click', function () {
+            cards[i].style.transform = 'translateX(100%)';
+            cards[i + 1].style.transform = 'none';
+        });
+    });
+    ixs.forEach((index, i) => {
+        index.addEventListener('click', () => {
+            cards[i + 1].style.transform = 'translateX(100%)';
+            cards[i].style.transform = 'none';
+        })
+    });
+
+    // select styles
+    var x, i, j, selElmnt, a, b, c;
+    x = document.getElementsByClassName("custom-select");
+    for (i = 0; i < x.length; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        a = document.createElement("div");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < selElmnt.length; j++) {
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function (e) {
+                var y, i, k, s, h;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < s.length; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("selected");
+                        for (k = 0; k < y.length; k++) {
+                            y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "selected");
+                        break;
+                    }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function (e) {
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+        });
+    }
+
+    function closeAllSelect(elmnt) {
+        var x, y, i, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        for (i = 0; i < y.length; i++) {
+            if (elmnt == y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < x.length; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+
+    document.addEventListener("click", closeAllSelect);
+
+    $("#range").ionRangeSlider({
+        type: "double",
+        min: 1,
+        max: 100,
+        from: 20,
+        to: 50,
+        step: 1,
+        prefix: "€"
+    });
+
+    $.fn.datepicker.language['en'] = {
+        days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+        months: ['January','February','March','April','May','June', 'July','August','September','October','November','December'],
+        monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        today: 'Today',
+        clear: 'Clear',
+        dateFormat: 'yyyy-mm-dd',
+        timeFormat: 'hh:ii aa',
+        firstDay: 0
+    };
+    $('.datepicker-here').datepicker({
+        language: 'en'
+    });
+
+
+</script>
+
+</html>

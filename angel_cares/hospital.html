@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Онкологический центр имени М.Д. Андерсона</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 job-hunt">
+                <p>Проект представлен
+                    <a href="#"><img src="assets/img/jobhunt.png" alt=""></a>
+                </p>
+            </div>
+            <div class="col-md-5 socials">
+                <span>Мы в сети</span>
+                <ul>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 notification">
+                <ul>
+                    <li>
+                        <button type="button" id="notification" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="far fa-bell"></i><span class="qty">10</span></button>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <h4>Последние новости</h4>
+                                <ul>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                    <li><a href="news_post.html">Жене Иванову пожертвовали 10000 рублей</a></li>
+                                </ul>
+                                <a href="news.html">Все события</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" id="messages" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="far fa-envelope"></i><span class="qty">3</span></button>
+                        <div class="dropdown messages">
+                            <div class="dropdown-menu" aria-labelledby="messages">
+                                <h4>Сообщения</h4>
+                                <div class="row">
+                                    <div class="col-md-3 user-img">
+                                        <img src="assets/img/blog/blogger3.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-6 user-msg">
+                                        <a href="profile.html" class="user-profile">Константин</a>
+                                        <a href="profile_conversation.html">Доктора провели сканирование брюшной
+                                            полости</a>
+                                    </div>
+                                    <div class="col-md-3 date">
+                                        <time>2 hours ago</time>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 user-img">
+                                        <img src="assets/img/blog/blogger4.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-6 user-msg">
+                                        <a href="profile.html" class="user-profile">Константин</a>
+                                        <a href="profile_conversation.html">Доктора провели сканирование брюшной
+                                            полости</a>
+                                    </div>
+                                    <div class="col-md-3 date">
+                                        <time>2 hours ago</time>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 user-img">
+                                        <img src="assets/img/blog/blogger5.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-6 user-msg">
+                                        <a href="profile.html" class="user-profile">Константин</a>
+                                        <a href="profile_conversation.html">Доктора провели сканирование брюшной
+                                            полости</a>
+                                    </div>
+                                    <div class="col-md-3 date">
+                                        <time>2 hours ago</time>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 login">
+                <button type="button" id="login" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Вход и регистрация
+                </button>
+                <div class="dropdown">
+                    <div class="dropdown-menu" aria-labelledby="login">
+                        <form id="login-form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="login-email"
+                                       placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="login-pass" placeholder="Пароль">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Войти</button>
+                            <a class="forgot-pass" href="forgot_password.html">Забыли пароль?</a>
+                            <a href="sign_up.html" id="registration"><span>Регистрация</span></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="head-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+            <div class="col-md-6 tagline">
+                <h2>Фонд помощи детям <br> с онкологическими заболеваниями</h2>
+            </div>
+            <div class="col-md-3 help-btn">
+                <a href="donation.html"><img src="assets/img/heart_white.png" alt="">Помочь фонду</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+                        aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="main-menu navbar-nav">
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="children.html">Дети</a></li>
+                        <li class="active"><a href="hospitals.html">Клиники мира</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="people.html">Люди</a></li>
+                        <li><a href="about.html">О фонде</a></li>
+                        <li><a href="donation_not_loged.html">Помощь фонду</a></li>
+                        <li><a href="blogs.html">Блоги</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="content article-pg post-pg hospital-pg col-md-8">
+                <h1>Онкологический центр имени М.Д. Андерсона</h1>
+                <div class="location">Чикаго, США</div>
+                <div class="info">Профилактика и лечение всех раковых заболеваний</div>
+                <div class="price">300-500$ в день</div>
+                <img src="assets/img/hospital.jpg" alt="">
+                <h4>Описание</h4>
+                <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся мать мальчика
+                    привела его в клинику и отказалась покидать ее стены, пока врачи не обследуют ее сына.Доктора
+                    провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся мать мальчика
+                    привела его в клинику и отказалась покидать ее стены, пока врачи не обследуют ее сына.</p>
+                <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся мать мальчика
+                    привела его в клинику и отказалась покидать ее стены, пока врачи не обследуют ее сына.</p>
+                <h4>Врачи</h4>
+                <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся мать мальчика
+                    привела его в клинику и отказалась покидать ее стены, пока врачи не обследуют ее сына.Доктора
+                    провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся мать мальчика
+                    привела его в клинику и отказалась покидать ее стены, пока врачи не обследуют ее сына.</p>
+                <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся мать мальчика
+                    привела его в клинику и отказалась покидать ее стены, пока врачи не обследуют ее сына.</p>
+                <div class="comment-art">
+                    <h2>Комментарии <span class="qty">(6)</span></h2>
+                    <div class="row">
+                        <div class="col-md-1 user-img">
+                            <img src="assets/img/feedback/father.jpg" alt="">
+                        </div>
+                        <div class="col-md-11 user-msg">
+                            <h4><a href="#">Сергей Иванович</a>
+                                <time>12.04.2013 18:00</time>
+                            </h4>
+                            <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся
+                                мать мальчика привела его в клинику и отказалась покидать ее стены, пока врачи не
+                                обследуют ее сына.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 user-img">
+                            <img src="assets/img/feedback/mother.jpg" alt="">
+                        </div>
+                        <div class="col-md-11 user-msg">
+                            <h4><a href="#">Сергей Иванович</a>
+                                <time>12.04.2013 18:00</time>
+                            </h4>
+                            <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся
+                                мать мальчика привела его в клинику и отказалась покидать ее стены, пока врачи не
+                                обследуют ее сына.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 user-img">
+                            <img src="assets/img/feedback/father.jpg" alt="">
+                        </div>
+                        <div class="col-md-11 user-msg">
+                            <h4><a href="#">Сергей Иванович</a>
+                                <time>12.04.2013 18:00</time>
+                            </h4>
+                            <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся
+                                мать мальчика привела его в клинику и отказалась покидать ее стены, пока врачи не
+                                обследуют ее сына.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 user-img">
+                            <img src="assets/img/feedback/mother.jpg" alt="">
+                        </div>
+                        <div class="col-md-11 user-msg">
+                            <h4><a href="#">Сергей Иванович</a>
+                                <time>12.04.2013 18:00</time>
+                            </h4>
+                            <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся
+                                мать мальчика привела его в клинику и отказалась покидать ее стены, пока врачи не
+                                обследуют ее сына.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 user-img">
+                            <img src="assets/img/feedback/father.jpg" alt="">
+                        </div>
+                        <div class="col-md-11 user-msg">
+                            <h4><a href="#">Сергей Иванович</a>
+                                <time>12.04.2013 18:00</time>
+                            </h4>
+                            <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся
+                                мать мальчика привела его в клинику и отказалась покидать ее стены, пока врачи не
+                                обследуют ее сына.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 user-img">
+                            <img src="assets/img/feedback/mother.jpg" alt="">
+                        </div>
+                        <div class="col-md-11 user-msg">
+                            <h4><a href="#">Сергей Иванович</a>
+                                <time>12.04.2013 18:00</time>
+                            </h4>
+                            <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся
+                                мать мальчика привела его в клинику и отказалась покидать ее стены, пока врачи не
+                                обследуют ее сына.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 user-img">
+                            <img src="assets/img/feedback/father.jpg" alt="">
+                        </div>
+                        <div class="col-md-11 user-msg">
+                            <h4><a href="#">Сергей Иванович</a>
+                                <time>12.04.2013 18:00</time>
+                            </h4>
+                            <p>Доктора провели сканирование брюшной полости Чарли лишь в тот момент, когда отчаявшаяся
+                                мать мальчика привела его в клинику и отказалась покидать ее стены, пока врачи не
+                                обследуют ее сына.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <aside class="right-bar news-info col-md-4">
+                <a href="new_hospital.html" class="add-post float-right"><i class="fas fa-plus-circle"></i> Добавить
+                    запись</a>
+                <div class="mailing-form">
+                    <h3>
+                        Подпишитесь на рассылку <span class="pink">важных новостей фонда</span>
+                    </h3>
+                    <form action="" id="mailing">
+                        <input type="email" placeholder="ваш email">
+                        <button type="submit">Подписаться</button>
+                    </form>
+                    <p class="subscribe-success">Вы подписались на рассылку новостей. <br>
+                        <a href="#">Отменить подписку</a></p>
+                </div>
+                <div class="best-art">
+                    <h2>Срочно нужна помощь</h2>
+                    <div class="row">
+                        <div class="col-md-3 article-img">
+                            <img src="assets/img/big_heart/child1.jpg" alt="">
+                        </div>
+                        <div class="col-md-9 article-info">
+                            <h4><a href="child.html">Витя Ефремов</a></h4>
+                            <p>5 лет, рак мозга</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 article-img">
+                            <img src="assets/img/big_heart/child2.jpg" alt="">
+                        </div>
+                        <div class="col-md-9 article-info">
+                            <h4><a href="child.html">Ксюша Захарова</a></h4>
+                            <p>11 лет, рак поджелудочной железы</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 article-img">
+                            <img src="assets/img/big_heart/child3.jpg" alt="">
+                        </div>
+                        <div class="col-md-9 article-info">
+                            <h4><a href="child.html">Витя Ефремов</a></h4>
+                            <p>2 года, лейкимия</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="imp-info">
+                    <h2>
+                        Важная информация
+                    </h2>
+                    <ul>
+                        <li><a href="faq.html">Как и чем помочь фонду?</a></li>
+                        <li><a href="faq.html">Как добавить ребёнка?</a></li>
+                        <li><a href="faq.html">Как добавить клинику?</a></li>
+                        <li><a href="faq.html">Как и чем помочь фонду?</a></li>
+                        <li><a href="faq.html">Как добавить ребёнка?</a></li>
+                        <li><a href="faq.html">Как добавить клинику?</a></li>
+                    </ul>
+                </div>
+                <div class="for-smi">
+                    <div class="dashed"><img src="assets/img/news.jpg" alt="" class="float-left">
+                        <a href="#">Информация для СМИ и блоггеров</a></div>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 copyrights">© <a href="index.html">Благотворительный фонд Angels Care 2013</a></div>
+            <div class="col-md-4 socials">
+                <span>Мы в сети</span>
+                <ul>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 btm-menu">
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about_contact.html">Обратная связь</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

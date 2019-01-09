@@ -1,0 +1,54 @@
+// Function for converting a px based font-size to rem.
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}rem;
+}
+// Transition function
+@mixin transit($time,$trans) {
+    -webkit-transition: all $time $trans;
+    -moz-transition: all $time $trans;
+    -o-transition: all $time $trans;
+    transition: all $time $trans;
+}
+// Rotate function
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    transform: rotate($deg);
+}
+// Rotate X function
+@mixin rotate-x($deg) {
+    -webkit-transform: rotateX($deg);
+    -ms-transform: rotateX($deg);
+    -moz-transform: rotateX($deg);
+    transform: rotateX($deg);
+}
+// Rotate Y function
+@mixin rotate-y($deg) {
+    -webkit-transform: rotateY($deg);
+    -ms-transform: rotateY($deg);
+    -moz-transform: rotateY($deg);
+    transform: rotateY($deg);
+}
+// Box-shadow function
+@mixin boxshadow($params) {
+    -webkit-box-shadow: $params;
+    -moz-box-shadow: $params;
+    box-shadow: $params;
+}
+// Column-count function
+@mixin columns($count) {
+    -moz-column-count: $count;
+    -webkit-column-count: $count;
+    column-count: $count;
+}
+// Filters
+@mixin filter($filter) {
+    -webkit-filter: $filter;
+    -moz-filter: $filter;
+    -o-filter: $filter;
+    -ms-filter: $filter;
+    filter: $filter;
+}

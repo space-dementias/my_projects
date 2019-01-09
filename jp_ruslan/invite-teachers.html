@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invite a Teacher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style-1.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+</head>
+<body class="page">
+
+<header class="header js-header">
+    <div class="header__container">
+        <a href="" class="header__logo">
+            <img src="/assets/img/logo_48.png" alt="jeprogresse.fr logo">
+        </a>
+        <div class="header__language-menu language-menu">
+            <input type="radio" id="lang-en" class="language-menu__toggler" name="language-select">
+            <input type="radio" id="lang-fr" class="language-menu__toggler" name="language-select">
+            <ul class="language-menu__list">
+                <li class="language-menu__item">
+                    <label for="lang-en" class="language-menu__label language-menu__label--en"></label>
+                </li>
+                <li class="language-menu__item">
+                    <label for="lang-fr" class="language-menu__label language-menu__label--fr"></label>
+                </li>
+            </ul>
+        </div>
+        <div class="header__information header-info">
+            <ul class="header-info__list">
+                <li class="header-info__item">
+                    <a href="javascript:void(0)" class="header-info__link header-info__link--messages">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </a>
+                </li>
+                <li class="header-info__item">
+                    <a href="javascript:void(0)" class="header-info__link header-info__link--notifications m-active">
+                        <span class="glyphicon glyphicon-bell"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__profile header-profile">
+            <a class="header-profile__link js-profile-dropdown">
+                <div class="header-profile__avatar">
+                    <img src="/assets/img/_avatar.jpg" alt="">
+                </div>
+                <span class="header-profile__name">
+Laura
+</span>
+                <span class="glyphicon glyphicon-menu-down"></span>
+            </a>
+            <ul class="header-profile__menu js-profile-menu">
+                <li class="header-profile__item">
+                    Link 1
+                </li>
+                <li class="header-profile__item">
+                    Link 2
+                </li>
+                <li class="header-profile__item">
+                    Link 3
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="page__wrapper">
+    <aside class="page__aside aside">
+        <nav class="aside__main-menu main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item main-menu__item--title">
+                    <span>Menu</span>
+                </li>
+                <li class="main-menu__item">
+                    <a href="" class="main-menu__link">My JP Classroom</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="" class="main-menu__link m-active">Book a Teacher</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="" class="main-menu__link main-menu__link--dropdown">My profile</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="" class="main-menu__link">Contact us</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="" class="main-menu__link main-menu__link--more">More</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="aside__alerts aside-alerts">
+            <ul class="aside-alerts__list">
+                <li class="aside-alerts__item">
+<span class="aside-alerts__title">
+my requests
+</span>
+                    <span class="aside-alerts__text">
+No request available
+</span>
+                </li>
+                <li class="aside-alerts__item">
+<span class="aside-alerts__title">
+My teachers
+</span>
+                    <span class="aside-alerts__text">
+No booked teachers
+</span>
+                </li>
+            </ul>
+        </div>
+
+    </aside>
+    <main class="page__main main">
+        <header class="main__header main-header">
+            <h1 class="main-header__page-title page-title">
+                Invite a Teacher
+            </h1>
+            <div class="main-header__filters page-filters">
+
+            </div>
+        </header>
+        <section class="teachers">
+            <h2 class="teachers__heading">
+                Showing 4 Math teachers
+            </h2>
+            <article class="teacher-card">
+                <div class="teacher-card__column">
+                    <div class="teacher-card__avatar">
+                        <img src="/assets/img/teacher_john.png" alt="">
+                    </div>
+                </div>
+                <div class="teacher-card__column">
+                    <div class="teacher-card__row">
+                        <div class="teacher-card__general">
+                            <h1 class="teacher-card__name">
+                                John
+                            </h1>
+                            <div class="teacher-card__rating rating">
+                                <div class="rating__stars">
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </div>
+                                <div class="rating__text">
+<span class="rating__rate">
+4.7
+</span>
+                                    (5 Reviews)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-card__features">
+                            <ul class="teacher-card__features-list">
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Distance
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-map-marker"></span>
+2km away
+</span>
+                                </li>
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Experience
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-time"></span>
+150 hours on JP
+</span>
+                                </li>
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Popularity
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-heart-empty"></span>
+1,500 likes
+</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="teacher-card__row">
+                        <p class="teacher-card__caption">
+                            Harvard University, BS Mathematics, Math Teacher
+                        </p>
+                        <p class="teacher-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        </p>
+                    </div>
+                </div>
+                <a href="" class="teacher-card__details">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                    <span class="teacher-card__detail-tooltip">
+View Details
+</span>
+                </a>
+            </article>
+            <article class="teacher-card">
+                <div class="teacher-card__column">
+                    <div class="teacher-card__avatar">
+                        <img src="/assets/img/teacher_steve.png" alt="">
+                    </div>
+                </div>
+                <div class="teacher-card__column">
+                    <div class="teacher-card__row">
+                        <div class="teacher-card__general">
+                            <h1 class="teacher-card__name">
+                                Steve
+                            </h1>
+                            <div class="teacher-card__rating rating">
+                                <div class="rating__stars">
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </div>
+                                <div class="rating__text">
+<span class="rating__rate">
+4.7
+</span>
+                                    (5 Reviews)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-card__features">
+                            <ul class="teacher-card__features-list">
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Distance
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-map-marker"></span>
+2km away
+</span>
+                                </li>
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Experience
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-time"></span>
+150 hours on JP
+</span>
+                                </li>
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Popularity
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-heart-empty"></span>
+1,500 likes
+</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="teacher-card__row">
+                        <p class="teacher-card__caption">
+                            Harvard University, BS Mathematics, Math Teacher
+                        </p>
+                        <p class="teacher-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        </p>
+                    </div>
+                </div>
+                <a href="" class="teacher-card__details">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                    <span class="teacher-card__detail-tooltip">
+View Details
+</span>
+                </a>
+            </article>
+            <article class="teacher-card">
+                <div class="teacher-card__column">
+                    <div class="teacher-card__avatar">
+                        <img src="/assets/img/teacher_mark.png" alt="">
+                    </div>
+                </div>
+                <div class="teacher-card__column">
+                    <div class="teacher-card__row">
+                        <div class="teacher-card__general">
+                            <h1 class="teacher-card__name">
+                                Mark Ivan
+                            </h1>
+                            <div class="teacher-card__rating rating">
+                                <div class="rating__stars">
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </div>
+                                <div class="rating__text">
+<span class="rating__rate">
+4.7
+</span>
+                                    (5 Reviews)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-card__features">
+                            <ul class="teacher-card__features-list">
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Distance
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-map-marker"></span>
+2km away
+</span>
+                                </li>
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Experience
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-time"></span>
+150 hours on JP
+</span>
+                                </li>
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Popularity
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-heart-empty"></span>
+1,500 likes
+</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="teacher-card__row">
+                        <p class="teacher-card__caption">
+                            Harvard University, BS Mathematics, Math Teacher
+                        </p>
+                        <p class="teacher-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        </p>
+                    </div>
+                </div>
+                <a href="" class="teacher-card__details">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                    <span class="teacher-card__detail-tooltip">
+View Details
+</span>
+                </a>
+            </article>
+            <article class="teacher-card">
+                <div class="teacher-card__column">
+                    <div class="teacher-card__avatar">
+                        <img src="/assets/img/teacher_vanessa.png" alt="">
+                    </div>
+                </div>
+                <div class="teacher-card__column">
+                    <div class="teacher-card__row">
+                        <div class="teacher-card__general">
+                            <h1 class="teacher-card__name">
+                                Vanessa
+                            </h1>
+                            <div class="teacher-card__rating rating">
+                                <div class="rating__stars">
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star m-red"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </div>
+                                <div class="rating__text">
+<span class="rating__rate">
+4.7
+</span>
+                                    (5 Reviews)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-card__features">
+                            <ul class="teacher-card__features-list">
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Distance
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-map-marker"></span>
+2km away
+</span>
+                                </li>
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Experience
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-time"></span>
+150 hours on JP
+</span>
+                                </li>
+                                <li class="teacher-card__feature-item">
+<span class="teacher-card__feature-title">
+Popularity
+</span>
+                                    <span class="teacher-card__feature-text">
+<span class="glyphicon glyphicon-heart-empty"></span>
+1,500 likes
+</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="teacher-card__row">
+                        <p class="teacher-card__caption">
+                            Harvard University, BS Mathematics, Math Teacher
+                        </p>
+                        <p class="teacher-card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        </p>
+                    </div>
+                </div>
+                <a href="" class="teacher-card__details">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                    <span class="teacher-card__detail-tooltip">
+View Details
+</span>
+                </a>
+            </article>
+        </section>
+        <div class="paginator">
+            <ul class="paginator__list">
+                <li class="paginator__item">
+                    <button class="paginator__btn">
+                        <span class="glyphicon glyphicon-menu-left"></span>
+                    </button>
+                </li>
+                <li class="paginator__item">
+                    <button class="paginator__btn m-active">01</button>
+                </li>
+                <li class="paginator__item">
+                    <button class="paginator__btn">02</button>
+                </li>
+                <li class="paginator__item">
+                    <button class="paginator__btn">
+                        <span class="glyphicon glyphicon-menu-right"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+</div>
+
+
+<section id="footer">
+    <div class="container fadeIn slow wow">
+        <div class="row">
+            <div class="logo">
+                <div class="label">jeprogresse.fr</div>
+                <img src="/assets/img/logo_48.png" alt="jeprogresse.fr logo">
+            </div>
+            <div class="adress">
+                <div class="label">Address</div>
+                <div class="text">103 Bis BD Macdonald</div>
+                <div class="text">75019 Paris</div>
+            </div>
+            <div class="siren">
+                <div class="label">SIREN</div>
+                <div class="text">841 228 125</div>
+            </div>
+            <div class="email">
+                <div class="label">Email</div>
+                <div class="text"><a href="mailto:contact@jeprogresse.fr">contact@jeprogresse.fr</a></div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <span>© Copyright JeProgresse 2014-2018</span>
+            <span><a href="#">Privacy Policy</a></span>
+        </div>
+
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+<script src="js/wow.js"></script>
+<script>new WOW().init();</script>
+</body>
+</html>

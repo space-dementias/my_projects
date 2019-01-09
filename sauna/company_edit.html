@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/ekko-lightbox.css">
+    <link rel="stylesheet" href="assets/js/slick/slick.css">
+    <link rel="stylesheet" href="assets/js/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/global/css/global.min.css">
+    <link rel="stylesheet" href="assets/features/navbar/css/navbar.min.css">
+    <link rel="stylesheet" href="assets/features/header/css/header.min.css">
+    <link rel="stylesheet" href="assets/features/map/css/map.min.css">
+    <link rel="stylesheet" href="assets/css/datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/company.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=cbb52def-9b9c-4746-ab41-e32176c51cb8"
+            type="text/javascript"></script>
+    <script src="assets/js/ekko-lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="assets/js/jquery.thumbs.js"></script>
+    <script src="assets/features/header/js/header.min.js"></script>
+    <script src="assets/features/navbar/js/navbar.min.js"></script>
+    <script src="assets/js/slick/slick.min.js"></script>
+    <script src="assets/features/map/js/map.min.js"></script>
+    <script src="assets/js/maskedinput.min.js"></script>
+    <script src="assets/js/datepicker.min.js"></script>
+    <script src="assets/js/rater.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <title>Режим редактирования компании</title>
+</head>
+<body class="main wood-bg">
+<section class="main-header">
+    <nav class="navigation">
+        <div class="row container">
+            <div class="col-lg-2 col-5 navigation__logo-wrapper">
+                <a href="#!">
+                    <img src="assets/img/images/logo-full.png" alt="Logo">
+                </a>
+            </div>
+            <div class="col-lg-8 desktop navigation__menu-wrapper">
+                <a href="main.html" class="navigation__menu-item">
+                    Главная
+                </a>
+                <a href="#!" class="navigation__menu-item">
+                    Каталог услуг
+                </a>
+                <a href="#!" class="navigation__menu-item">
+                    Акции
+                </a>
+                <a href="#!" class="navigation__menu-item">
+                    Рейтинги
+                </a>
+                <a href="#!" class="navigation__menu-item">
+                    Запись
+                </a>
+                <a href="#!" class="navigation__menu-item">
+                    Рекламодателям
+                </a>
+            </div>
+            <div class="col-lg-2 col-2 navigation__login-wrapper">
+                <div>
+                    <a href="#!" class="navigation__login-button desktop" data-toggle="modal" data-target="#login">
+                        Вход
+                    </a>
+                    <a href="#!" class="navigation__login-button mobile" data-toggle="modal" data-target="#login">
+                        <img src="assets/img/svg/icons8-customer-90.svg" class="svg">
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-2 menu-toggle mobile">
+                <a class="btn btn-secondary dropdown-toggle">
+                    <img src="assets/img/svg/icons8-menu-filled-100.svg" class="svg">
+                </a>
+
+            </div>
+        </div>
+        <div class="col-12 mobile navigation__menu-wrapper">
+            <a href="main.html" class="navigation__menu-item">
+                Главная
+            </a>
+            <a href="#!" class="navigation__menu-item">
+                Каталог услуг
+            </a>
+            <a href="#!" class="navigation__menu-item">
+                Акции
+            </a>
+            <a href="#!" class="navigation__menu-item">
+                Рейтинги
+            </a>
+            <a href="#!" class="navigation__menu-item">
+                Запись
+            </a>
+            <a href="#!" class="navigation__menu-item">
+                Рекламодателям
+            </a>
+        </div>
+    </nav>
+</section>
+<section class="header-company edit">
+    <div class="row container">
+        <div class="col-lg-3 header-company__logo">
+            <p><img src="assets/img/company/logo.png" alt="Afrodita" class="fl-left">
+                Банный комплекс <strong>Афродита</strong>
+            </p>
+        </div>
+        <div class="col-lg-6 header-company__menu">
+            <p class="ta-center">
+                <img src="assets/img/company/settings.png" alt="settings">
+                Режим редактирования компании
+            </p>
+        </div>
+        <div class="col-lg-3 header-company__close">
+            <p class="ta-right"><a href="#">Отменить и выйти</a> <i class="fas fa-long-arrow-alt-right"></i></p>
+        </div>
+    </div>
+</section>
+
+<!-- COMPANY EDIT -->
+<section class="company-edit container row">
+    <div class="col-lg-3 col-12">
+        <div class="nav flex-column nav-pills" id="v-pills-edits" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-info-tab" data-toggle="pill" href="#v-pills-info" role="tab"
+               aria-controls="v-pills-info" aria-selected="true">Общая информация</a>
+            <a class="nav-link" id="v-pills-contacts-tab" data-toggle="pill" href="#v-pills-contacts" role="tab"
+               aria-controls="v-pills-contacts" aria-selected="false">Контакты</a>
+            <a class="nav-link" id="v-pills-holes-tab" data-toggle="pill" href="#v-pills-holes" role="tab"
+               aria-controls="v-pills-holes" aria-selected="false">Залы</a>
+            <a class="nav-link" id="v-pills-services-tab" data-toggle="pill" href="#v-pills-services" role="tab"
+               aria-controls="v-pills-services" aria-selected="false">Услуги и тарифы</a>
+            <a class="nav-link" id="v-pills-stock-tab" data-toggle="pill" href="#v-pills-stock" role="tab"
+               aria-controls="v-pills-stock" aria-selected="true">Акции, мастерклассы</a>
+            <a class="nav-link" id="v-pills-masters-tab" data-toggle="pill" href="#v-pills-masters" role="tab"
+               aria-controls="v-pills-masters" aria-selected="false">Мастера</a>
+            <a class="nav-link" id="v-pills-advantages-tab" data-toggle="pill" href="#v-pills-advantages" role="tab"
+               aria-controls="v-pills-advantages" aria-selected="false">Преимущества</a>
+        </div>
+    </div>
+    <div class="col-lg-9 col-12">
+        <div class="tab-content" id="v-pills-editsContent">
+            <div class="tab-pane fade show active" id="v-pills-info" role="tabpanel" aria-labelledby="v-pills-info-tab">
+                <form id="company-info">
+                    <div class="row">
+                        <div class="col-lg-7 ">
+                            <input type="text" class="form-control" placeholder="Название">
+                            <input type="text" class="form-control" placeholder="сауна">
+                        </div>
+                        <div class="col-lg-5">
+                            <label class="uploadbutton grey">
+                                <div class="button">
+                                    <img src="assets/img/company/add-camera.png" alt="file" class="fl-left">
+                                    Главное фото компании
+                                    <span class="small">
+                                        (будет отображаться на первом экране страницы компании)
+                                    </span>
+                                </div>
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea name="description" placeholder="Описание"></textarea>
+                            <label class="uploadbutton">
+                                <div class="button">
+                                    <img src="assets/img/svg/icons8-attach-100.svg" alt="file" class="svg">Загрузить
+                                    логотип
+                                </div>
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row divider"></div>
+                    <div class="row">
+                        <h4 class="col-12">Фотоальбом</h4>
+                        <div class="col-lg-3 info__photo">
+                            <img src="assets/img/company/photo.jpg" alt="photo">
+                            <a href="#" class="info__photo_del" title="Удалить"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="col-lg-3 info__photo">
+                            <img src="assets/img/company/photo.jpg" alt="photo">
+                            <a href="#" class="info__photo_del" title="Удалить"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="col-lg-3 info__photo add-photo">
+                            <label class="uploadbutton grey">
+                                <div class="button">
+                                    <img src="assets/img/company/add-camera.png" alt="file">
+                                    Добавить фото
+                                </div>
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row divider"></div>
+                    <div class="row">
+                        <h4 class="col-lg-12">Лицензии</h4>
+                        <div class="col-lg-2 info__license">
+                            <img src="assets/img/company/license.jpg" alt="photo">
+                            <a href="#" class="info__photo_del" title="Удалить"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="col-lg-2 info__license">
+                            <img src="assets/img/company/license.jpg" alt="photo">
+                            <a href="#" class="info__photo_del" title="Удалить"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="col-lg-2 info__license">
+                            <img src="assets/img/company/license.jpg" alt="photo">
+                            <a href="#" class="info__photo_del" title="Удалить"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="col-lg-2 info__license">
+                            <img src="assets/img/company/license.jpg" alt="photo">
+                            <a href="#" class="info__photo_del" title="Удалить"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="row ai-btm">
+                        <div class="col-lg-2">
+                            <label class="uploadbutton grey">
+                                <div class="button">
+                                    <img src="assets/img/company/add-camera.png" alt="file">
+                                    Добавить
+                                </div>
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Название лицензии">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn white" type="submit">Сохранить изменения</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="v-pills-contacts" role="tabpanel" aria-labelledby="v-pills-contacts-tab">
+                <form id="compant-contacts">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Адрес основной">
+                            <input type="text" placeholder="Адрес 2">
+                            <input type="text" placeholder="Адрес 3">
+                            <input type="text" placeholder="Адрес 4">
+                            <input type="text" placeholder="Адрес 5">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="tel" placeholder="Телефон основной">
+                            <input type="tel" placeholder="Телефон 2">
+                            <input type="tel" placeholder="Телефон 3">
+                            <input type="email" placeholder="E-mail">
+                            <input type="text" placeholder="Сайт компании">
+                        </div>
+                    </div>
+                    <div class="row divider"></div>
+                    <div class="row">
+                        <h4 class="col-lg-12">Время работы</h4>
+                        <div class="col-lg-4"><input type="text" placeholder="График 1"></div>
+                        <div class="col-lg-4"><input type="text" placeholder="График 2"></div>
+                        <div class="col-lg-4"><input type="text" placeholder="График 3"></div>
+                    </div>
+                    <div class="row divider"></div>
+                    <div class="row">
+                        <h4 class="col-lg-12">Как добраться</h4>
+                        <div class="col-lg-4"><input type="text" placeholder="Название остановки 1"></div>
+                        <div class="col-lg-4"><input type="text" placeholder="Название остановки 2"></div>
+                        <div class="col-lg-4"><input type="text" placeholder="Название остановки 3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn white" type="submit">Сохранить изменения</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="v-pills-holes" role="tabpanel" aria-labelledby="v-pills-holes-tab">
+                <form action="" id="company-hole">
+                    <div class="item row">
+                        <div class="col-lg-4 item-img">
+                            <img src="assets/img/main/klub-saun-ostrov-sauna-zamok_fde60.png">
+                        </div>
+                        <div class="col-lg-7 item-info">
+                            <h2 class="item-info__name">Русский зал</h2>
+                            <p class="item-info__price">
+                                <strong>700</strong> руб
+                                <span class="item-info__price_type">финская</span>
+                            </p>
+                            <p class="item-info__descr">
+                                Краткий текст описания тут Краткий текст описания идет тут текстКраткий текст описания
+                                тут Краткий текст описания идет тут текст описания идет тут текст
+                            </p>
+                            <div class="item-info__feature">
+                                <img src="assets/img/main/features/background-house-item-01-min.png">
+                                <img src="assets/img/main/features/turkey-icons-realistic-min.png">
+                                <img src="assets/img/main/features/a5333ba4787528fd4712688d7dddab86-min.png">
+                                <img src="assets/img/main/features/85827548-isometric-people-diving-into-water-in-to-the-swimming-pool-diver-male-swimmer-that-jumping-and-divin-min.jpg">
+                                <img src="assets/img/main/features/stock-vector-young-woman-on-massage-table-in-spa-salon-isolated-on-white-background-672541642-min.png">
+                                <img src="assets/img/main/features/depositphotos_173139402-stock-illustration-realistic-microphone-icon-vector-min.jpg">
+                            </div>
+                        </div>
+                        <div class="col-lg-1 item-location">
+                            <a href="#" class="info__photo_del" title="Удалить"><i class="fas fa-times"></i></a>
+                            <a href="#" class="info__photo_edit" title="Редактировать"><i
+                                    class="fas fa-pen-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="row add-hole">
+                        <a href="#" class="btn white">
+                            <div class="col"><img src="assets/img/svg/icons8-plus-filled-100.svg" alt="plus"
+                                                  class="svg">
+                                Добавить зал
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Название">
+                            <input type="number" placeholder="Вместимость">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="tel" placeholder="Тип парной">
+                            <input type="tel" placeholder="Стоимость">
+                        </div>
+                    </div>
+                    <div class="row divider"></div>
+                    <div class="row hole-sevices">
+                        <h4 class="col-lg-12">Услуги в зале</h4>
+                        <div class="col-lg-12">
+                            <label class="filter-label filter-label__check">
+                                Кальян
+                                <input type="checkbox">
+                            </label>
+                            <label class="filter-label filter-label__check">
+                                Караоке
+                                <input type="checkbox">
+                            </label>
+                            <label class="filter-label filter-label__check">
+                                Камин
+                                <input type="checkbox">
+                            </label>
+                            <label class="filter-label filter-label__check">
+                                С вениками
+                                <input type="checkbox">
+                            </label>
+                            <label class="filter-label filter-label__check">
+                                Бильярд
+                                <input type="checkbox">
+                            </label>
+                            <label class="filter-label filter-label__check">
+                                Массажист
+                                <input type="checkbox">
+                            </label>
+                            <label class="filter-label filter-label__check">
+                                С большим бассейном
+                                <input type="checkbox">
+                            </label>
+                            <label class="filter-label filter-label__check">
+                                SPA-процедуры
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row divider"></div>
+                    <div class="row">
+                        <h4 class="col-lg-12">Фотоальбом зала</h4>
+                        <div class="col-lg-3 info__photo">
+                            <img src="assets/img/company/photo.jpg" alt="photo">
+                            <a href="#" class="info__photo_del" title="Удалить"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="col-lg-3 info__photo">
+                            <img src="assets/img/company/photo.jpg" alt="photo">
+                            <a href="#" class="info__photo_del" title="Удалить"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="col-lg-3 info__photo add-photo">
+                            <label class="uploadbutton grey">
+                                <div class="button">
+                                    <img src="assets/img/company/add-camera.png" alt="file">
+                                    Добавить фото
+                                </div>
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn white" type="submit">Сохранить изменения</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="v-pills-services" role="tabpanel" aria-labelledby="v-pills-services-tab">
+                <ul class="nav nav-pills rat-tab" id="rat-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-sauna-tab" data-toggle="pill"
+                           href="#pills-sauna" role="tab" aria-controls="pills-sauna"
+                           aria-selected="true">
+                            <img src="assets/img/svg/sauna.svg" class="svg">
+                            Бани/сауны
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-massage-tab" data-toggle="pill" href="#pills-massage" role="tab"
+                           aria-controls="pills-massage" aria-selected="false">
+                            <img src="assets/img/svg/massage.svg" class="svg">
+                            Массаж
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-spa-tab" data-toggle="pill" href="#pills-spa" role="tab"
+                           aria-controls="pills-spa" aria-selected="false">
+                            <img src="assets/img/svg/stones.svg" class="svg">
+                            SPA-процедуры
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-goods-tab" data-toggle="pill" href="#pills-goods" role="tab"
+                           aria-controls="pills-goods" aria-selected="false">
+                            <img src="assets/img/svg/soap.svg" class="svg">
+                            Товары для бани
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="rat-tabContent">
+                    <div class="tab-pane fade show active" id="pills-sauna" role="tabpanel"
+                         aria-labelledby="pills-sauna-tab">
+                        <form>
+                            <div class="row sauna-service">
+                                <h4 class="col-lg-12">Сервис</h4>
+                                <div class="col-lg-2">
+                                    <label class="filter-label filter-label__check">
+                                        Кальян
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Караоке
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Камин
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        С вениками
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                </div>
+                                <div class="col-lg-2">
+                                    <label class="filter-label filter-label__check">
+                                        Бильярд
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Массажист
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        С большим бассейном
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        SPA-процедуры
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                </div>
+                            </div>
+                            <div class="row divider"></div>
+                            <div class="row sauna-types">
+                                <h4 class="col-lg-12">Типы парной</h4>
+                                <div class="col-lg-12">
+                                    <label class="filter-label filter-label__check">
+                                        Русская
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Финская
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Японская
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Инфракрасная
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Хамам
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row divider"></div>
+                            <div class="row ai-cntr">
+                                <h4 class="col-lg-2 mb-0">Вместимость</h4>
+                                <select name="number" id="number" class="col-lg-1">
+                                    <option value="12">12</option>
+                                    <option value="24">24</option>
+                                    <option value="32">32</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button class="btn white" type="submit">Сохранить изменения</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="pills-massage" role="tabpanel" aria-labelledby="pills-massage-tab">
+                        <form>
+                            <div class="row sauna-service">
+                                <h4 class="col-lg-12">Вид массажа</h4>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название массажа
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название массажа
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название массажа
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название массажа
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название массажа
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название массажа
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название массажа
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название массажа
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                </div>
+                            </div>
+                            <div class="row divider"></div>
+                            <div class="row sauna-types">
+                                <h4 class="col-lg-12">Место проведения</h4>
+                                <div class="col-lg-12">
+                                    <label name="place" class="filter-label filter-label__radio">
+                                        В салоне
+                                        <input name="place" type="radio">
+                                    </label>
+                                    <label name="place" class="filter-label filter-label__radio">
+                                        Дома
+                                        <input name="place" type="radio">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row divider"></div>
+                            <div class="row sauna-types">
+                                <h4 class="col-lg-12">Пол массажиста</h4>
+                                <div class="col-lg-12">
+                                    <label class="filter-label filter-label__check">
+                                        Мужской
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Женский
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-12 divider"></div>
+                                <div class="col-lg-12">
+                                    <label class="filter-label filter-label__check">
+                                        Специальное медицинское образование
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button class="btn white" type="submit">Сохранить изменения</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="pills-spa" role="tabpanel" aria-labelledby="pills-spa-tab">
+                        <form>
+                            <div class="row sauna-service">
+                                <h4 class="col-lg-12">Виды процедур</h4>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название процедуры
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название процедуры
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название процедуры
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название процедуры
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название процедуры
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название процедуры
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название процедуры
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название процедуры
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                </div>
+                            </div>
+                            <div class="row divider"></div>
+                            <div class="row sauna-types">
+                                <h4 class="col-lg-12">Параметр</h4>
+                                <div class="col-lg-12">
+                                    <label name="place" class="filter-label filter-label__radio">
+                                        Заведение
+                                        <input name="place" type="radio">
+                                    </label>
+                                    <label name="place" class="filter-label filter-label__radio">
+                                        Специалист
+                                        <input name="place" type="radio">
+                                    </label>
+                                </div>
+                                <div class="col-lg-12 divider"></div>
+                                <div class="col-lg-12">
+                                    <label class="filter-label filter-label__check">
+                                        С комнатой отдыха
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button class="btn white" type="submit">Сохранить изменения</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="pills-goods" role="tabpanel" aria-labelledby="pills-goods-tab">
+                        <form>
+                            <div class="row sauna-service">
+                                <h4 class="col-lg-12">Категория</h4>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                    <input type="text" placeholder="Стоимость">
+                                </div>
+                            </div>
+                            <div class="row divider"></div>
+                            <div class="row mb-25">
+                                <h4 class="col-lg-12">Категория</h4>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                    <label class="filter-label filter-label__check">
+                                        Название
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button class="btn white" type="submit">Сохранить изменения</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-stock" role="tabpanel" aria-labelledby="v-pills-stock-tab">
+                <form id="company-master">
+                    <div class="row">
+                        <h4 class="col-lg-12">Акции</h4>
+                        <div class="col-lg-3">
+                            <label class="uploadbutton grey">
+                                <div class="button">
+                                    <img src="assets/img/company/add-camera.png" alt="file">
+                                    Добавить фото
+                                </div>
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" placeholder="Название акции">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" data-toggle="datepicker"
+                                           placeholder="Дата начала">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" data-toggle="datepicker"
+                                           placeholder="Дата окончания">
+                                </div>
+                            </div>
+                            <textarea placeholder="Описание"></textarea>
+                        </div>
+                    </div>
+                    <div class="row divider"></div>
+                    <div class="row">
+                        <h4 class="col-lg-12">Мастерклассы</h4>
+                        <div class="col-lg-3">
+                            <label class="uploadbutton grey">
+                                <div class="button">
+                                    <img src="assets/img/company/add-camera.png" alt="file">
+                                    Добавить фото
+                                </div>
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" placeholder="Название акции">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" data-toggle="datepicker"
+                                           placeholder="Дата начала">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" data-toggle="datepicker"
+                                           placeholder="Дата окончания">
+                                </div>
+                            </div>
+                            <textarea placeholder="Описание"></textarea>
+                        </div>
+                    </div>
+                    <div class="row divider"></div>
+                    <div class="row">
+                        <h4 class="col-lg-12">Вакансии</h4>
+                    </div>
+                    <div class="row add-hole">
+                        <a href="#" class="btn white">
+                            <div class="col-lg-6"><img src="assets/img/svg/icons8-plus-filled-100.svg" alt="plus"
+                                                  class="svg">
+                                Добавить вакансию
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Должность">
+
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Заработная плата">
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea placeholder="Описание"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn white" type="submit">Сохранить изменения</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="v-pills-masters" role="tabpanel" aria-labelledby="v-pills-masters-tab">
+                <form id="company-masters">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="assets/img/company/master.png" alt="master">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4>Иванова Наталья</h4>
+                            <h5>массажист</h5>
+                            <p>Краткий текст описания тут Краткий текст описания идет тут текстКраткий текст описания
+                                тут Краткий текст описания идет тут текст описания идет тут текст </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label class="uploadbutton grey round">
+                                <div class="button">
+                                    <img src="assets/img/company/add-camera.png" alt="file">
+
+                                </div>
+                                Добавить фото
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Имя">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Фамилия">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Должность">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Стаж">
+                                </div>
+                            </div>
+                            <textarea placeholder="Описание"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn white" type="submit">Сохранить изменения</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="v-pills-advantages" role="tabpanel" aria-labelledby="v-pills-advantages-tab">
+                <form id="advantages">
+                    <div class="row">
+                        <p class="col-lg-12">Выберите, какие пункты будут отобраажаться на странице</p>
+                        <div class="col-lg-4">
+                            <label class="map__filter-checkbox col-form-label ta-center">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="img-wrap">
+                                    <img src="assets/img/svg/icons8-us-dollar-96.svg" class="svg" alt="dollar">
+                                </span>
+                                <h4>Все формы оплаты</h4>
+                                <span class="label">Текст описания идет тут Русский зал – это очень уютное место для отдыха. Удобн</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="map__filter-checkbox col-form-label ta-center">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="img-wrap">
+                                    <img src="assets/img/svg/icons8-marker-100%20(1).svg" class="svg" alt="location">
+                                </span>
+                                <h4>Удобное расположение</h4>
+                                <span class="label">Текст описания идет тут Русский зал – это очень уютное место для отдыха. Удобн</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="map__filter-checkbox col-form-label ta-center">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="img-wrap">
+                                    <img src="assets/img/svg/icons8-online-support-100.svg" class="svg" alt="support">
+                                </span>
+                                <h4>Онлайн запись</h4>
+                                <span class="label">Текст описания идет тут Русский зал – это очень уютное место для отдыха. Удобн</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="map__filter-checkbox col-form-label ta-center">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="img-wrap">
+                                    <img src="assets/img/svg/icons8-forest-100.svg" class="svg" alt="nature">
+                                </span>
+                                <h4>Посреди природы</h4>
+                                <span class="label">Текст описания идет тут Русский зал – это очень уютное место для отдыха. Удобн</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="map__filter-checkbox col-form-label ta-center">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="img-wrap">
+                                    <img src="assets/img/svg/icons8-watch-100.svg" class="svg" alt="24/7">
+                                </span>
+                                <h4>Работаем круглосуточно</h4>
+                                <span class="label">Текст описания идет тут Русский зал – это очень уютное место для отдыха. Удобн</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="map__filter-checkbox col-form-label ta-center">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="img-wrap">
+                                    <img src="assets/img/svg/icons8-dining-room-100.svg" class="svg" alt="kitchen">
+                                </span>
+                                <h4>Собственная кухня</h4>
+                                <span class="label">Текст описания идет тут Русский зал – это очень уютное место для отдыха. Удобн</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="map__filter-checkbox col-form-label ta-center">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="img-wrap">
+                                    <img src="assets/img/svg/icons8-business-100.svg" class="svg" alt="expirience">
+                                </span>
+                                <h4>Опыт работы более … лет</h4>
+                                <span class="label">Текст описания идет тут Русский зал – это очень уютное место для отдыха. Удобн</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="map__filter-checkbox col-form-label ta-center">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="img-wrap">
+                                    <img src="assets/img/svg/icons8-car-100.svg" class="svg" alt="parking">
+                                </span>
+                                <h4>Удобная парковка</h4>
+                                <span class="label">Текст описания идет тут Русский зал – это очень уютное место для отдыха. Удобн</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="map__filter-checkbox col-form-label ta-center">
+                                <input class="checkbox" type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="img-wrap">
+                                    <img src="assets/img/svg/icons8-shopping-cart-100.svg" class="svg" alt="cart">
+                                </span>
+                                <h4>Магазин товаров для сауны</h4>
+                                <span class="label">Текст описания идет тут Русский зал – это очень уютное место для отдыха. Удобн</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn white" type="submit">Сохранить изменения</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="copyrights">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-9 copy-logo ta-right">
+                <a href="#"><img src="assets/img/foot-logo.png" alt="footer logo"></a>
+                <span>&copy; 2017. Все права защищены</span>
+            </div>
+            <div class="col-md-4 copy-payment desktop">
+                <a href="#"><img src="assets/img/webmoney-icon.png" alt="web-money"></a>
+                <a href="#"><img src="assets/img/yandex-payment.png" alt="yandex money"></a>
+                <a href="#"><img src="assets/img/visa-payment.png" alt="visa"></a>
+                <a href="#"><img src="assets/img/qiwi-payment.png" alt="qiwi"></a>
+                <a href="#"><img src="assets/img/paypal-payment.png" alt="paypal"></a>
+            </div>
+            <div class="col-md-3 col-3 copy-map">
+                <a href="#" class="site-map"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav foot-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Специалисты рекомендуют</a></li>
+                    <li><a href="#">Доска бесплатных объявлений</a></li>
+                    <li><a href="#">Рекламодателю</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- AUTHORIZATION MODAL -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Авторизация</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><a data-dismiss="modal" data-toggle="modal" data-target="#authorization" class="btn grn">Войти</a>
+                </p>
+                <p><a data-dismiss="modal" data-toggle="modal" data-target="#signin"
+                      class="btn yell">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="authorization" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Вход</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-4 col-form-label">Ваше имя</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name" placeholder="Введите имя...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="phone" class="col-sm-4 col-form-label">Телефон</label>
+                        <div class="col-sm-8">
+                            <input type="tel" class="form-control" id="phone" placeholder="+7 (999) 999-99-99">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="col-sm-4 col-form-label">Пароль</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="password" placeholder="Введите пароль...">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <p>или авторизоваться с помощью соцсетей</p>
+                            <ul class="nav social">
+                                <li><a href="#"><img src="assets/img/svg/icons8-vkontakte-circled-filled-100.svg"
+                                                     alt="vkontakte" class="svg"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/icons8-facebook-circled-filled-100.svg"
+                                                     alt="facebook"
+                                                     class="svg"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/icons8-instagram-filled-100.svg"
+                                                     alt="instagram"
+                                                     class="svg"></a></li>
+                                <li><a href="#"><img src="assets/img/svg/icons8-twitter-circled-filled-100.svg"
+                                                     alt="twitter"
+                                                     class="svg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 ta-center">
+                            <button type="submit" class="btn grn">Войти</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <ul class="signin">
+                    <li><a data-dismiss="modal" data-toggle="modal" data-target="#signin">Регистрация</a></li>
+                    <li><a href="#">Забыли пароль?</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SIGN IN MODAL -->
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Регистрация</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="sign-in">
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-4 col-form-label">Ваше имя</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name" placeholder="Введите имя...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="phone" class="col-sm-4 col-form-label">Телефон</label>
+                        <div class="col-sm-8">
+                            <input type="tel" class="form-control" id="phone" placeholder="+7 (999) 999-99-99">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-4 col-form-label">E-mail</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" placeholder="Введите e-mail...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="new-pass" class="col-sm-4 col-form-label">Придумайте пароль</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="new-pass" placeholder="Введите пароль...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="rep-pass" class="col-sm-4 col-form-label">Повторите пароль</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="rep-pass" placeholder="Введите пароль...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="progress-info">Надежный</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="g-recaptcha" data-sitekey="6Le6UmkUAAAAAOcWcPuSYH7w__rkQnSBIQFwvD-R"></div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-12 ta-center">
+                            <button type="submit" class="btn grn">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <ul class="log-menu">
+                    <li><a data-dismiss="modal" data-toggle="modal" data-target="#login">Уже есть аккаунт?</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MAKE ORDER MODAL -->
+<div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="order" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Заказать зал</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="order-in">
+                    <div class="form-group row">
+                        <p class="ta-center dark-color">Заполните все поля для бронирования места в нашей сауне. <br>Мы
+                            свяжемся с
+                            вами в ближайшее время. </p>
+                        <p class="ta-center">Зал для бронирования: <a href="#">Русский зал</a></p>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label>Дата</label>
+                            <input type="text" class="form-control" data-toggle="datepicker">
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="prihod">Время прихода</label>
+                            <select name="prihod" id="prihod">
+                                <option value="00:00">00:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="poseshenie">Время посещения</label>
+                            <select name="poseshenie" id="poseshenie">
+                                <option value="00:00">00:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:00">01:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label for="name">Имя</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="g-recaptcha" data-sitekey="6Le6UmkUAAAAAOcWcPuSYH7w__rkQnSBIQFwvD-R"></div>
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 ta-center">
+                            <p class="red-txt">* Онлайн заказ на сайте не является гарантией бронирования зала.</p>
+                            <button type="submit" class="btn grn">Забронировать</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- WISHLIST MODAL -->
+<div class="modal fade" id="wishlist" tabindex="-1" role="dialog" aria-labelledby="wishlist" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title ta-center">Выбранная компания добавлена в список Избранных</h5>
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FULL FEEDBACK MODAL -->
+<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedback" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="item ta-center">
+                    <div class="item-img">
+                        <img src="assets/img/main/avatar.png">
+                    </div>
+                    <div class="item-info">
+                        <h2 class="item-info__name">Андрей</h2>
+                        <div class="item-info__rating">
+                            <p>оценил место на
+                                <img src="assets/img/main/icons8-star-filled-100%20(1).png">
+                                <img src="assets/img/main/icons8-star-filled-100%20(1).png">
+                                <img src="assets/img/main/icons8-star-filled-100%20(1).png">
+                                <img src="assets/img/main/icons8-star-filled-100%20(1).png">
+                                <img src="assets/img/main/icons8-star-filled-100%20(1).png">
+                                и написал
+                                <span class="date">27 марта 2018 в 19:56</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-desc">
+                        <p class="item-desc__txt">Текст описания компании идет тут Русский
+                            зал – это очень уютное
+                            место для отдыха. Удобная зона для трапез оборудована всем
+                            необходимым: красивый массивный стол с кованым подстольем,
+                            мягкий кожаный диван и аудио-, видеотехника позволяют в полной
+                            мере насладиться расслабляющим отдыхом.
+                            Текст описания компании идет тут Русский
+                            зал – это очень уютное
+                            место для отдыха. Удобная зона для трапез оборудована всем
+                            необходимым: красивый массивный стол с кованым подстольем,
+                            мягкий кожаный диван и аудио-, видеотехника позволяют в полной
+                            мере насладиться расслабляющим отдыхом.
+                        </p>
+                        <p class="ta-center">
+                                                        <span class="positive js-rating" data-like="4">
+                                                        </span>
+                            <span class="negative js-rating" data-dislike="2">
+                                                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- LEAVE FEEDBACK MODAL -->
+<div class="modal fade" id="leave-feed" tabindex="-1" role="dialog" aria-labelledby="leav-feed" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <ul class="nav nav-pills rat-tab" id="feed-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-feed-tab" data-toggle="pill" href="#pills-feed" role="tab"
+                       aria-controls="pills-feed" aria-selected="false">
+                        <img src="assets/img/main/icons8-speech-60.png">
+                        Отзыв
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-quest-tab" data-toggle="pill" href="#pills-quest" role="tab"
+                       aria-controls="pills-quest" aria-selected="false">
+                        <img src="assets/img/main/icons8-question-mark-filled-100.png">
+                        Вопрос
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-complaint-tab" data-toggle="pill"
+                       href="#pills-complaint" role="tab" aria-controls="pills-complaint"
+                       aria-selected="true">
+                        <img src="assets/img/main/icons8-error-52.png">
+                        Жалоба
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="feed-tabContent">
+                <div class="tab-pane fade show active" id="pills-feed" role="tabpanel"
+                     aria-labelledby="pills-feed-tab">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Новый отзыв</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="ta-center">Спасибо, что нашли возможность оставить Ваш отзыв, приходите к нам
+                            снова!</p>
+                        <form id="feed-in">
+                            <div class="form-group row area">
+                                <label for="name" class="col-sm-3 col-form-label">Достоинства</label>
+                                <div class="col-sm-9">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row area">
+                                <label for="name" class="col-sm-3 col-form-label">Недостатки</label>
+                                <div class="col-sm-9">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row area">
+                                <label for="name" class="col-sm-3 col-form-label">Комментарий</label>
+                                <div class="col-sm-9">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-8">
+                                    <label class="col-form-label fl-left">Ваша оценка</label>
+                                    <div class="rating"></div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label class="uploadbutton">
+                                        <div class="button">
+                                            <img src="assets/img/svg/icons8-attach-100.svg" alt="file" class="svg">Прикрепить
+                                            фото
+                                        </div>
+                                        <input type="file" accept=".png, .jpg, .jpeg"/>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="form-group row">
+                                    <p class="ta-right">Чтобы оставить отзыв необходимо зарегистрироваться</p>
+                                    <div class="col-sm-6">
+                                        <div class="form-group row">
+                                            <label for="phone" class="col-sm-3 col-form-label">Имя</label>
+                                            <div class="col-sm-9">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="phone" class="col-sm-3 col-form-label">E-mail</label>
+                                            <div class="col-sm-9">
+                                                <input type="email">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="g-recaptcha"
+                                             data-sitekey="6Le6UmkUAAAAAOcWcPuSYH7w__rkQnSBIQFwvD-R"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <p>или авторизоваться с помощью соцсетей</p>
+                                        <ul class="nav social">
+                                            <li><a href="#"><img
+                                                    src="assets/img/svg/icons8-vkontakte-circled-filled-100.svg"
+                                                    alt="vkontakte" class="svg"></a></li>
+                                            <li><a href="#"><img
+                                                    src="assets/img/svg/icons8-facebook-circled-filled-100.svg"
+                                                    alt="facebook"
+                                                    class="svg"></a></li>
+                                            <li><a href="#"><img src="assets/img/svg/icons8-instagram-filled-100.svg"
+                                                                 alt="instagram"
+                                                                 class="svg"></a></li>
+                                            <li><a href="#"><img
+                                                    src="assets/img/svg/icons8-twitter-circled-filled-100.svg"
+                                                    alt="twitter"
+                                                    class="svg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12 ta-center">
+                                        <button type="submit" class="btn grn">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade desktop" id="pills-quest" role="tabpanel"
+                     aria-labelledby="pills-quest-tab">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Новый вопрос</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="ta-center">Мы постараемся связаться с Вами в ближайшее же время!</p>
+                        <form id="question-in">
+                            <div class="form-group row area">
+                                <label for="name" class="col-sm-3 col-form-label">Что Вас интересует?</label>
+                                <div class="col-sm-9">
+                                    <textarea></textarea>
+                                    <label class="map__filter-checkbox col-sm-8 col-form-label ta-right">
+                                        <input class="checkbox" type="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Уведомлять меня об ответах</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="form-group row">
+                                    <p class="ta-right">Чтобы оставить отзыв необходимо зарегистрироваться</p>
+                                    <div class="col-sm-6">
+                                        <div class="form-group row">
+                                            <label for="phone" class="col-sm-3 col-form-label">Имя</label>
+                                            <div class="col-sm-9">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="phone" class="col-sm-3 col-form-label">E-mail</label>
+                                            <div class="col-sm-9">
+                                                <input type="email">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="g-recaptcha"
+                                             data-sitekey="6Le6UmkUAAAAAOcWcPuSYH7w__rkQnSBIQFwvD-R"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <p>или авторизоваться с помощью соцсетей</p>
+                                        <ul class="nav social">
+                                            <li><a href="#"><img
+                                                    src="assets/img/svg/icons8-vkontakte-circled-filled-100.svg"
+                                                    alt="vkontakte" class="svg"></a></li>
+                                            <li><a href="#"><img
+                                                    src="assets/img/svg/icons8-facebook-circled-filled-100.svg"
+                                                    alt="facebook"
+                                                    class="svg"></a></li>
+                                            <li><a href="#"><img src="assets/img/svg/icons8-instagram-filled-100.svg"
+                                                                 alt="instagram"
+                                                                 class="svg"></a></li>
+                                            <li><a href="#"><img
+                                                    src="assets/img/svg/icons8-twitter-circled-filled-100.svg"
+                                                    alt="twitter"
+                                                    class="svg"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12 ta-center">
+                                        <button type="submit" class="btn grn">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade desktop" id="pills-complaint" role="tabpanel"
+                     aria-labelledby="pills-complaint-tab">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Пожаловаться</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="ta-center">Поделитесь Вашим мнением, чтобы мы могли улучшить наш сервис обслужиания
+                        </p>
+                        <form id="complaint-in">
+                            <div class="form-group row area">
+                                <label class="col-sm-3 col-form-label">Дата посещения</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" data-toggle="datepicker">
+                                </div>
+                            </div>
+                            <div class="form-group row area">
+                                <label for="name" class="col-sm-3 col-form-label">Что не понравилось?</label>
+                                <div class="col-sm-9">
+                                    <textarea></textarea>
+                                    <label class="uploadbutton">
+                                        <div class="button">
+                                            <img src="assets/img/svg/icons8-attach-100.svg" alt="file" class="svg">Прикрепить
+                                            фото
+                                        </div>
+                                        <input type="file" accept=".png, .jpg, .jpeg"/>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <label class="col-form-label fl-left">Ваша оценка</label>
+                                    <div class="rating"></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="form-group row">
+                                    <p class="ta-right">Чтобы оставить отзыв необходимо зарегистрироваться</p>
+                                    <div class="col-sm-6">
+                                        <div class="form-group row">
+                                            <label for="phone" class="col-sm-3 col-form-label">Имя</label>
+                                            <div class="col-sm-9">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="phone" class="col-sm-3 col-form-label">E-mail</label>
+                                            <div class="col-sm-9">
+                                                <input type="email">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="g-recaptcha"
+                                             data-sitekey="6Le6UmkUAAAAAOcWcPuSYH7w__rkQnSBIQFwvD-R"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <p>или авторизоваться с помощью соцсетей</p>
+                                        <ul class="nav social">
+                                            <li><a href="#"><img
+                                                    src="assets/img/svg/icons8-vkontakte-circled-filled-100.svg"
+                                                    alt="vkontakte" class="svg"></a></li>
+                                            <li><a href="#"><img
+                                                    src="assets/img/svg/icons8-facebook-circled-filled-100.svg"
+                                                    alt="facebook"
+                                                    class="svg"></a></li>
+                                            <li><a href="#"><img src="assets/img/svg/icons8-instagram-filled-100.svg"
+                                                                 alt="instagram"
+                                                                 class="svg"></a></li>
+                                            <li><a href="#"><img
+                                                    src="assets/img/svg/icons8-twitter-circled-filled-100.svg"
+                                                    alt="twitter"
+                                                    class="svg"></a></li>
+                                        </ul>
+                                        <label class="map__filter-checkbox col-sm-8 col-form-label ta-center">
+                                            <input class="checkbox" type="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Уведомлять меня об ответах</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12 ta-center">
+                                        <button type="submit" class="btn grn">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOLLOW MODAL -->
+<div class="modal fade" id="follow" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Подписаться</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-4 col-form-label">Ваше имя</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name" placeholder="Введите имя...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-4 col-form-label">E-mail</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 ta-center">
+                            <button type="submit" class="btn grn">Сохранить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- IMPROVE PORTAL -->
+<a href="#!" class="improve" data-toggle="modal" data-target="#improve">
+    <img src="assets/img/svg/icons8-facebook-like-filled-100%20(1).svg" alt="improve portal" class="svg">
+    <span>Улучшить портал</span>
+</a>
+
+<!-- IMPROVE MODAL -->
+<div class="modal fade" id="improve" tabindex="-1" role="dialog" aria-labelledby="improve" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Есть предложения?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="ta-center">Спасибо, что Вы помогаете сделать наш портал лучше. <br>
+                    Будем признательны за конструктивную критику и интересные предложения</p>
+                <form id="improve-in">
+                    <div class="form-group row area">
+                        <label for="name" class="col-sm-2 col-form-label">Ваше предложение</label>
+                        <div class="col-sm-10">
+                            <textarea name="offer" placeholder="Введите предложение..."></textarea>
+                            <label class="uploadbutton">
+                                <div class="button">
+                                    <img src="assets/img/svg/icons8-attach-100.svg" alt="file" class="svg">Прикрепить
+                                    фото
+                                </div>
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="phone" class="col-sm-2 col-form-label">Ваше имя</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="name" placeholder="Введите имя...">
+                        </div>
+                        <label for="phone" class="col-sm-2 col-form-label">Телефон</label>
+                        <div class="col-sm-4">
+                            <input type="tel" class="form-control" id="phone" placeholder="+7 (999) 999-99-99">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="map__filter-checkbox col-sm-8 col-form-label ta-right">
+                            <input class="checkbox" type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Я согласен на <a href="#">обработку данных</a></span>
+                        </label>
+                        <div class="col-sm-4">
+                            <div class="g-recaptcha" data-sitekey="6Le6UmkUAAAAAOcWcPuSYH7w__rkQnSBIQFwvD-R"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-12 ta-center">
+                            <button type="submit" class="btn grn">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FIND ERROR -->
+<a href="#!" class="find-error" data-toggle="modal" data-target="#find-error">
+    <img src="assets/img/find-error.png" alt="improve portal">
+    <span>Пожаловаться</span>
+</a>
+
+<!-- FIND ERROR MODAL -->
+<div class="modal fade" id="find-error" tabindex="-1" role="dialog" aria-labelledby="find-error" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Изменить информацию</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="ta-center">Нашли ошибку на странице?<br>
+                    Будем Вам очень признательны, если сообщите нам о ней.</p>
+                <form id="find-in">
+                    <div class="form-group row area">
+                        <label for="name" class="col-sm-2 col-form-label">Сообщение</label>
+                        <div class="col-sm-10">
+                            <textarea name="offer" placeholder="Введите сообщение..."></textarea>
+                            <label class="uploadbutton">
+                                <div class="button">
+                                    <img src="assets/img/svg/icons8-attach-100.svg" alt="file" class="svg">Прикрепить
+                                    фото
+                                </div>
+                                <input type="file" accept=".png, .jpg, .jpeg"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label">Ваше имя</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="name" placeholder="Введите имя...">
+                        </div>
+                        <label for="phone" class="col-sm-2 col-form-label">Телефон</label>
+                        <div class="col-sm-4">
+                            <input type="tel" class="form-control" id="phone" placeholder="+7 (999) 999-99-99">
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="email" placeholder="Введите e-mail...">
+                        </div>
+                        <label for="page" class="col-sm-2 col-form-label">Наименование страницы</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="page" placeholder="Введите наименование..."
+                                   value="Пражский клуб">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="map__filter-checkbox col-sm-8 col-form-label ta-right">
+                            <input class="checkbox" type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Я согласен на <a href="#">обработку данных</a></span>
+                        </label>
+                        <div class="col-sm-4">
+                            <div class="g-recaptcha" data-sitekey="6Le6UmkUAAAAAOcWcPuSYH7w__rkQnSBIQFwvD-R"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-12 ta-center">
+                            <button type="submit" class="btn grn">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

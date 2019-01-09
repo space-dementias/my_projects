@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Book Teacher 2</title>
+    <meta charset="UTF-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/custombox.min.css">
+    <link rel="stylesheet" href="css/sol.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/elements.css">
+    <link rel="stylesheet" href="css/dialogs.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/custombox.min.js"></script>
+    <script src="js/custombox.legacy.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/sol.js"></script>
+
+<body class="page">
+
+<div class="modal visible">
+    <form class="modal_container">
+        <header>
+            <h2>Book a Teacher</h2>
+            <p>Make John as your Match Teacher</p>
+            <span class="btn" id="close"><img src="assets/img/cross.png" alt="close modal"></span>
+        </header>
+        <section>
+            <div class="options">
+                <ol>
+                    <li class="checked">Schedule Request</li>
+                    <li>Price Range & Level</li>
+                    <li>Request Info</li>
+                </ol>
+            </div>
+
+            <div class="main_info step2">
+                <h3>Set your level and preferred price range</h3>
+                <div class="main_info__row">
+                    <label>Student Level</label>
+                    <label class="sessions level" for="beginner">
+                        <input id="beginner" type="radio" name="level" checked="checked">
+                        <span>
+                                <img src="assets/img/beginner.png" alt="beginner">
+                                Beginner
+                            </span>
+                    </label>
+                    <label class="sessions level" for="notions">
+                        <input id="notions" type="radio" name="level">
+                        <span>
+                                <img src="assets/img/notions.png" alt="notions">
+                                Notions
+                            </span>
+                    </label>
+                    <label class="sessions level" for="average">
+                        <input id="average" type="radio" name="level">
+                        <span>
+                                <img src="assets/img/average.png" alt="average">
+                                Average
+                            </span>
+                    </label>
+                    <label class="sessions level" for="good">
+                        <input id="good" type="radio" name="level">
+                        <span>
+                                <img src="assets/img/good.png" alt="good">
+                                Good
+                            </span>
+                    </label>
+                    <label class="sessions level" for="advanced">
+                        <input id="advanced" type="radio" name="level">
+                        <span>
+                                <img src="assets/img/advanced.png" alt="advanced">
+                                Advanced
+                            </span>
+                    </label>
+                </div>
+                <div class="main_info__row">
+                    <label for="range">Price Range</label>
+                    <input type="text" id="range" name="range"/>
+                </div>
+                <div class="buttons">
+                    <div class="btn-submit next__step">Continue <i class="fas fa-angle-right"></i></div>
+                </div>
+
+            </div>
+
+        </section>
+    </form>
+
+</div>
+
+</body>
+
+<script>
+
+    // select styles
+    var x, i, j, selElmnt, a, b, c;
+    x = document.getElementsByClassName("custom-select");
+    for (i = 0; i < x.length; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        a = document.createElement("div");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < selElmnt.length; j++) {
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function (e) {
+                var y, i, k, s, h;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < s.length; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("selected");
+                        for (k = 0; k < y.length; k++) {
+                            y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "selected");
+                        break;
+                    }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function (e) {
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+        });
+    }
+
+    function closeAllSelect(elmnt) {
+        var x, y, i, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        for (i = 0; i < y.length; i++) {
+            if (elmnt == y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < x.length; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+
+    document.addEventListener("click", closeAllSelect);
+
+    $("#range").ionRangeSlider({
+        type: "double",
+        min: 1,
+        max: 100,
+        from: 20,
+        to: 50,
+        step: 1,
+        prefix: "€"
+    });
+
+
+</script>
+
+</html>
